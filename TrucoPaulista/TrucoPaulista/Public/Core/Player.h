@@ -5,20 +5,14 @@
 
 class Player
 {
-private:
-	void SetControlled(PlayerController* pPlayerController);
-
 protected:
 	PlayerController* m_PlayerController;
 	PlayerState* m_PlayerState;	
 
 public:
-	Player(PlayerState* pPlayerState);
+	Player(PlayerState* pPlayerState, PlayerController* pPlayerController);
 	virtual ~Player();
 	
 	PlayerController* GetPlayerController();
 	PlayerState* GetPlayerState();
-
-	friend class PlayerController;
 };
-

@@ -1,5 +1,8 @@
 #include "Core\GameMode.h"
 #include "Core\GameState.h"
+#include "Core\Player.h"
+#include "Core\PlayerController.h"
+#include "Core\Result.h"
 #include <algorithm>
 
 GameMode::GameMode(int numPlayers, GameState* pGameState)
@@ -17,7 +20,7 @@ GameMode::~GameMode()
 	}
 }
 
-void GameMode::OnJoined(PlayerController* pPlayerController)
+void GameMode::OnJoined(PlayerController* pPlayerController, bool isAIControlled)
 {
 }
 
@@ -33,7 +36,7 @@ void GameMode::OnGameEnded()
 {
 }
 
-Result GameMode::Join(PlayerController* pPlayerController)
+Result GameMode::Join(PlayerController* pPlayerController, bool isAIControlled)
 {
 	if (m_PlayersList.size() == m_MaxPlayers)
 	{
@@ -41,9 +44,17 @@ Result GameMode::Join(PlayerController* pPlayerController)
 		return Result(ResultCode::GameIsFull, "This game already reached the maximum players limit.");
 	}
 	
+	std::vector<PlayerController*>::iterator it;
+	it = std::find(m_PlayersList.begin(), m_PlayersList.end(), pPlayerController);
+
+	if (it != m_PlayersList.end())
+	{
+		return Result(ResultCode::PlayerAlreadyJoined, "This player is alreadi in the game.");
+	}
+
 	m_PlayersList.push_back(pPlayerController);
 
-	OnJoined(pPlayerController);
+	OnJoined(pPlayerController, isAIControlled);
 
 	return Result::Success();
 }
@@ -51,7 +62,6 @@ Result GameMode::Join(PlayerController* pPlayerController)
 void GameMode::Leave(PlayerController* pPlayerController)
 {
 	std::vector<PlayerController*>::iterator it;
-
 	it = std::find(m_PlayersList.begin(), m_PlayersList.end(), pPlayerController);
 
 	if (it != m_PlayersList.end())

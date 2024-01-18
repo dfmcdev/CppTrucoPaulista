@@ -1,9 +1,11 @@
 #include "Core\GameInstance.h"
 #include "Core\GameState.h"
-#include "Game\TrucoPaulistaGameMode.h"
+#include "Game\TrucoGameMode.h"
+#include "Game\Deck.h"
 #include "Core\AIPlayerController.h"
 #include "Core\AIPlayerState.h"
 #include "Core\AIPlayer.h"
+#include "Core\Result.h"
 
 GameInstance* GameInstance::m_Instance = nullptr;
 
@@ -48,7 +50,7 @@ void GameInstance::CreateGame(int numPlayers, int numAIPlayers, GameMode* pGameM
 	int totalPlayers = numPlayers + numAIPlayers;
 
 	// Inicializa o modo de jogo
-	m_GameMode = new TrucoPaulistaGameMode(totalPlayers, new GameState());
+	m_GameMode = new TrucoGameMode(totalPlayers, new GameState(), new Deck());
 
 	// Inicializa os jogadores
 	m_Controllers.reserve(totalPlayers);
@@ -58,11 +60,6 @@ void GameInstance::CreateGame(int numPlayers, int numAIPlayers, GameMode* pGameM
 		PlayerController* pController = new PlayerController();
 		m_Controllers.push_back(pController);
 
-		PlayerState* pState = new PlayerState();
-		Player* pPlayer = new Player(pState);
-
-		pController->Posses(pPlayer);
-
 		m_GameMode->Join(pController);
 	}
 
@@ -71,11 +68,6 @@ void GameInstance::CreateGame(int numPlayers, int numAIPlayers, GameMode* pGameM
 		AIPlayerController* pAIController = new AIPlayerController();
 		m_Controllers.push_back(pAIController);
 
-		AIPlayerState* pAIState = new AIPlayerState();
-		AIPlayer* pAIPlayer = new AIPlayer(pAIState);
-
-		pAIController->Posses(pAIPlayer);
-
-		m_GameMode->Join(pAIController);
+		m_GameMode->Join(pAIController, true);
 	}
 }

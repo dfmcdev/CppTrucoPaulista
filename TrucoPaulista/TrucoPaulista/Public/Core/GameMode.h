@@ -1,9 +1,10 @@
 #pragma once
 
 #include <vector>
-#include "Result.h"
-#include "GameState.h"
-#include "PlayerController.h"
+
+class Result;
+class GameState;
+class PlayerController;
 
 class GameMode
 {
@@ -15,7 +16,7 @@ protected:
 
 	GameState* m_GameState;
 
-	virtual void OnJoined(PlayerController* pController);
+	virtual void OnJoined(PlayerController* pController, bool isAIControlled = false);
 	virtual void OnLeaved(PlayerController* pController);
 
 	virtual void OnGameStarted();
@@ -25,10 +26,10 @@ public:
 	GameMode(int maxPlayers, GameState* pGameState);
 	virtual ~GameMode();
 
-	Result Join(PlayerController* pController);
+	Result Join(PlayerController* pController, bool isAIControlled = false);
 	void Leave(PlayerController* pController);
-	void StartGame();
-	void EndGame();
+	virtual void StartGame();
+	virtual void EndGame();
 
 	int GetNumPlayers();
 };

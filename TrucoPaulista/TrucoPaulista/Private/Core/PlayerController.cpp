@@ -13,10 +13,17 @@ PlayerController::PlayerController(bool isAIControlled) :
 {
 }
 
+PlayerController::~PlayerController()
+{
+	if (m_ControlledPlayer)
+	{
+		delete m_ControlledPlayer;
+	}
+}
+
 void PlayerController::Posses(Player* pPlayer)
 {
 	m_ControlledPlayer = pPlayer;
-	pPlayer->SetControlled(this);
 }
 
 Player* PlayerController::GetControlledPlayer()

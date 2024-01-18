@@ -1,7 +1,7 @@
 #include "Core\AIPlayer.h"
 #include "Core\AIPlayerState.h"
+#include "Core\AIPlayerController.h"
 
-AIPlayer::AIPlayer(AIPlayerState* pPlayerState) : Player(pPlayerState)
+AIPlayer::AIPlayer(AIPlayerState* pPlayerState, AIPlayerController* pAIPlayerController) : Player(pPlayerState, pAIPlayerController)
 {
-	m_PlayerState = pPlayerState;
 }

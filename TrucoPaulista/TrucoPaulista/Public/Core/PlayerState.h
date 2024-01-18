@@ -4,5 +4,6 @@ class PlayerState
 {
 public:
 	PlayerState();
+	virtual ~PlayerState() = default;
 };
 

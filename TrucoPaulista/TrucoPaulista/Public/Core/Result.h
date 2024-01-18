@@ -6,7 +6,8 @@ enum ResultCode
 	Undefined,
 	Success,
 	Failed,
-	GameIsFull
+	GameIsFull,
+	PlayerAlreadyJoined
 };
 
 class Result

@@ -2,9 +2,12 @@
 #include "Core\PlayerController.h"
 #include "Core\PlayerState.h"
 
-Player::Player(PlayerState* pPlayerState)
+Player::Player(PlayerState* pPlayerState, PlayerController* pPlayerController)
 {
 	m_PlayerState = pPlayerState;
+	m_PlayerController = pPlayerController;
+
+	pPlayerController->Posses(this);
 }
 
 Player::~Player()
@@ -13,11 +16,6 @@ Player::~Player()
 	{
 		delete m_PlayerState;
 	}
-}
-
-void Player::SetControlled(PlayerController* pPlayerController)
-{
-	m_PlayerController = pPlayerController;
 }
 
 PlayerController* Player::GetPlayerController()

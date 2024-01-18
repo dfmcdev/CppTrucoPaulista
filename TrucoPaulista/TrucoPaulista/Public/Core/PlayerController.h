@@ -6,6 +6,7 @@ class PlayerController
 {
 private:
 	bool m_IsAIControled;
+	void Posses(Player* pPlayer);
 
 protected:
 	Player* m_ControlledPlayer;
@@ -13,9 +14,10 @@ protected:
 public:
 	PlayerController();
 	PlayerController(bool isAIControlled);
-	virtual ~PlayerController() = default;
-
-	void Posses(Player* pPlayer);
+	virtual ~PlayerController();
+	
 	Player* GetControlledPlayer();
+
+	friend Player;
 };
 

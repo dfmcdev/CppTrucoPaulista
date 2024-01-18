@@ -30,8 +30,11 @@
     <ClInclude Include="Public\Core\PlayerController.h" />
     <ClInclude Include="Public\Core\PlayerState.h" />
     <ClInclude Include="Public\Game\Card.h" />
+    <ClInclude Include="Public\Game\Deck.h" />
     <ClInclude Include="Public\Game\Hand.h" />
-    <ClInclude Include="Public\Game\TrucoPaulistaGameMode.h" />
+    <ClInclude Include="Public\Game\TrucoGameMode.h" />
+    <ClInclude Include="Public\Game\TrucoPlayer.h" />
+    <ClInclude Include="Public\Game\TrucoPlayerState.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Private\Core\AIPlayer.cpp" />
@@ -44,8 +47,11 @@
     <ClCompile Include="Private\Core\PlayerController.cpp" />
     <ClCompile Include="Private\Core\PlayerState.cpp" />
     <ClCompile Include="Private\Game\Card.cpp" />
+    <ClCompile Include="Private\Game\Deck.cpp" />
     <ClCompile Include="Private\Game\Hand.cpp" />
-    <ClCompile Include="Private\Game\TrucoPaulistaGameMode.cpp" />
+    <ClCompile Include="Private\Game\TrucoGameMode.cpp" />
+    <ClCompile Include="Private\Game\TrucoPlayer.cpp" />
+    <ClCompile Include="Private\Game\TrucoPlayerState.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
