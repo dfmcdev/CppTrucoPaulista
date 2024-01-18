@@ -7,7 +7,7 @@ class Card;
 class Hand
 {
 private:
-	std::vector<Card*> m_cards;
+	std::vector<Card*> m_Cards;
 
 public:
 	Hand();

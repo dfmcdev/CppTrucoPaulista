@@ -13,7 +13,6 @@ private:
 
 protected:	
 	std::vector<PlayerController*> m_PlayersList;
-
 	GameState* m_GameState;
 
 	virtual void OnJoined(PlayerController* pController, bool isAIControlled = false);
@@ -32,5 +31,7 @@ public:
 	virtual void EndGame();
 
 	int GetNumPlayers();
+
+	GameState* GetGameState();
 };
 

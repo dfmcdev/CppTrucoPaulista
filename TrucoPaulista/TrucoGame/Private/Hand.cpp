@@ -6,32 +6,32 @@ Hand::Hand()
 
 Hand::~Hand()
 {
-	if (!m_cards.empty())
+	if (!m_Cards.empty())
 	{
-		m_cards.clear();
+		m_Cards.clear();
 	}
 }
 
 void Hand::SetInitalCards(std::vector<Card*> cards)
 {
-	m_cards.clear();
-	m_cards.insert(m_cards.end(), cards.begin(), cards.end());
+	m_Cards.clear();
+	m_Cards.insert(m_Cards.end(), cards.begin(), cards.end());
 }
 
 void Hand::AddCard(Card* card)
 {
-	m_cards.push_back(card);
+	m_Cards.push_back(card);
 }
 
 Card* Hand::PlayCard(int index)
 {
-	Card* card = m_cards[index];
-	m_cards.erase(m_cards.begin() + index);
+	Card* card = m_Cards[index];
+	m_Cards.erase(m_Cards.begin() + index);
 
 	return card;
 }
 
 std::vector<Card*> Hand::GetCards()
 {
-	return m_cards;
+	return m_Cards;
 }

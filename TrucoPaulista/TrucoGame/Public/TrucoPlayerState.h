@@ -7,7 +7,7 @@ class Hand;
 class TrucoPlayerState : public PlayerState
 {
 private:
-	Hand* m_hand;
+	Hand* m_Hand;
 
 public:
 	TrucoPlayerState(Hand* hand);

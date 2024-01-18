@@ -12,8 +12,8 @@ enum Naipes : int
 class Card
 {
 private:
-	Naipes m_naipe;
-	int m_value;
+	Naipes m_Naipe;
+	int m_Value;
 
 public:
 	Card(Naipes naipe, int value);

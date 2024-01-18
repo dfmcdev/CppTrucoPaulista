@@ -13,16 +13,16 @@ enum ResultCode
 class Result
 {
 private:
-	std::string m_message;
-	ResultCode m_code;
+	std::string m_Message;
+	ResultCode m_Code;
 
 public:
-	Result() : m_code(ResultCode::Undefined), m_message("") {}
-	Result(ResultCode code, std::string message) : m_code(code), m_message(message) {}
+	Result() : m_Code(ResultCode::Undefined), m_Message("") {}
+	Result(ResultCode code, std::string message) : m_Code(code), m_Message(message) {}
 
 	static Result Success() { return Result(ResultCode::Success, ""); }
 
-	bool IsSuccess() { return m_code == ResultCode::Success; }
-	ResultCode GetCode() { return m_code; }
-	std::string GetMessage() { return m_message; }
+	bool IsSuccess() { return m_Code == ResultCode::Success; }
+	ResultCode GetCode() { return m_Code; }
+	std::string GetMessage() { return m_Message; }
 };

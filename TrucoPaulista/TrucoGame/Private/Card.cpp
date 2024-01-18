@@ -1,32 +1,32 @@
 #include "Card.h"
 
 Card::Card(Naipes naipe, int value) :
-	m_naipe(naipe),
-	m_value(value)
+	m_Naipe(naipe),
+	m_Value(value)
 {
 }
 
 bool Card::operator>(const Card& card) const
 {
-	if (m_value == 0 && m_naipe == Naipes::Paus) 
+	if (m_Value == 0 && m_Naipe == Naipes::Paus) 
 	{
 		return true;
 	}
-	else if (m_value == 3 && m_naipe == Naipes::Copas && !(card.m_value == 0 && card.m_naipe == Naipes::Paus)) 
+	else if (m_Value == 3 && m_Naipe == Naipes::Copas && !(card.m_Value == 0 && card.m_Naipe == Naipes::Paus))
 	{
 		return true;
 	}
-	else if (m_value == 7 && m_naipe == Naipes::Espadas && !((card.m_value == 0 && card.m_naipe == Naipes::Paus) || (card.m_value == 3 && card.m_naipe == Naipes::Copas))) 
+	else if (m_Value == 7 && m_Naipe == Naipes::Espadas && !((card.m_Value == 0 && card.m_Naipe == Naipes::Paus) || (card.m_Value == 3 && card.m_Naipe == Naipes::Copas)))
 	{
 		return true;
 	}
-	else if (m_value == 3 && m_naipe == Naipes::Ouros && !((card.m_value == 0 && card.m_naipe == Naipes::Paus) || (card.m_value == 3 && card.m_naipe == Naipes::Copas) || (card.m_value == 7 && card.m_naipe == Naipes::Espadas)))
+	else if (m_Value == 3 && m_Naipe == Naipes::Ouros && !((card.m_Value == 0 && card.m_Naipe == Naipes::Paus) || (card.m_Value == 3 && card.m_Naipe == Naipes::Copas) || (card.m_Value == 7 && card.m_Naipe == Naipes::Espadas)))
 	{
 		return true;
 	}
-	else if (!((card.m_value == 0 && card.m_naipe == Naipes::Paus) || (card.m_value == 3 && card.m_naipe == Naipes::Copas) || (card.m_value == 7 && card.m_naipe == Naipes::Espadas) || (card.m_value == 3 && card.m_naipe == Naipes::Ouros)))
+	else if (!((card.m_Value == 0 && card.m_Naipe == Naipes::Paus) || (card.m_Value == 3 && card.m_Naipe == Naipes::Copas) || (card.m_Value == 7 && card.m_Naipe == Naipes::Espadas) || (card.m_Value == 3 && card.m_Naipe == Naipes::Ouros)))
 	{
-		return m_value > card.m_value;
+		return m_Value > card.m_Value;
 	}
 	else 
 	{
@@ -36,7 +36,7 @@ bool Card::operator>(const Card& card) const
 
 bool Card::operator==(const Card& card) const
 {
-	if (m_naipe == card.m_naipe && m_value == card.m_value) 
+	if (m_Naipe == card.m_Naipe && m_Value == card.m_Value)
 	{
 		return true;
 	}
@@ -48,10 +48,10 @@ bool Card::operator==(const Card& card) const
 
 Naipes Card::GetNaipe()
 {
-	return m_naipe;
+	return m_Naipe;
 }
 
 int Card::GetValue()
 {
-	return m_value;
+	return m_Value;
 }

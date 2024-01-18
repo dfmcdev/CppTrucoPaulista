@@ -6,19 +6,16 @@ class Deck;
 
 class TrucoGameMode : public GameMode
 {
-private:
-	Deck* m_deck;
-	int m_numStartCards = 3;
+private:	
+	int m_NumStartCards = 3;
 
 public:
-	TrucoGameMode(int numPlayers, TrucoGameState* gameState, Deck* deck);
+	TrucoGameMode(int numPlayers, TrucoGameState* gameState);
 	~TrucoGameMode();
 
 	void StartGame() override;
-	void OnJoined(PlayerController* pPlayerController, bool isAIControlled = false) override;
+	void OnJoined(PlayerController* pPlayerController, bool isAIControlled = false) override;	
 
-	Deck* GetDeck();
-
-	int GetNumStartCards() { return m_numStartCards; }
+	int GetNumStartCards() { return m_NumStartCards; }
 };
 

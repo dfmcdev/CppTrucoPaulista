@@ -3,18 +3,18 @@
 
 TrucoPlayerState::TrucoPlayerState(Hand* hand) : PlayerState()
 {
-	m_hand = hand;
+	m_Hand = hand;
 }
 
 TrucoPlayerState::~TrucoPlayerState()
 {
-	if (m_hand)
+	if (m_Hand)
 	{
-		delete m_hand;
+		delete m_Hand;
 	}
 }
 
 Hand* TrucoPlayerState::GetHand()
 {
-	return m_hand;
+	return m_Hand;
 }

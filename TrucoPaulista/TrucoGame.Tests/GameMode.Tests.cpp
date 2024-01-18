@@ -22,7 +22,7 @@ namespace TrucoPaulistaTests
 			int numPlayers = 1;
 
 			PlayerController* controller = new PlayerController();
-			TrucoGameMode* gameMode = new TrucoGameMode(numPlayers, new TrucoGameState(), new Deck());
+			TrucoGameMode* gameMode = new TrucoGameMode(numPlayers, new TrucoGameState(new Deck()));
 
 			Assert::AreEqual(0, gameMode->GetNumPlayers());
 
@@ -46,7 +46,7 @@ namespace TrucoPaulistaTests
 			PlayerController* pControllerOne = new PlayerController();
 			PlayerController* pControllerTwo = new PlayerController();
 
-			TrucoGameMode* gameMode = new TrucoGameMode(numPlayers, new TrucoGameState(), new Deck());
+			TrucoGameMode* gameMode = new TrucoGameMode(numPlayers, new TrucoGameState(new Deck()));
 
 			Assert::AreEqual(0, gameMode->GetNumPlayers());
 
@@ -72,7 +72,7 @@ namespace TrucoPaulistaTests
 			PlayerController* controllerOne = new PlayerController();
 			PlayerController* controllerTwo = new PlayerController();
 
-			TrucoGameMode* gameMode = new TrucoGameMode(numPlayers, new TrucoGameState(), new Deck());
+			TrucoGameMode* gameMode = new TrucoGameMode(numPlayers, new TrucoGameState(new Deck()));
 
 			gameMode->Join(controllerOne);
 			gameMode->Join(controllerTwo);

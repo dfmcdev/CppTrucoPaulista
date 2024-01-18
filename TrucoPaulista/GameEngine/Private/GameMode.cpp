@@ -86,3 +86,8 @@ int GameMode::GetNumPlayers()
 {
 	return (int)m_PlayersList.size();
 }
+
+GameState* GameMode::GetGameState()
+{
+	return m_GameState;
+}

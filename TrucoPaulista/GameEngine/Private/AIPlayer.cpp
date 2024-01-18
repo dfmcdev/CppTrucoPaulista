@@ -4,8 +4,8 @@ AIPlayer::AIPlayer(AIPlayerState* aiPlayerState, double minThinkTimeSec, double 
 {
 	m_AIPlayerState = aiPlayerState;
 
-	m_minThinkTimeSeconds = minThinkTimeSec;
-	m_maxThinkTimeSeconds = maxThinkTimeSec;
+	m_MinThinkTimeSeconds = minThinkTimeSec;
+	m_MaxThinkTimeSeconds = maxThinkTimeSec;
 }
 
 AIPlayer::~AIPlayer()

@@ -14,7 +14,7 @@ void TrucoGameInstance::CreateGame(int numPlayers, int numAIPlayers, GameMode* p
 	int totalPlayers = numPlayers + numAIPlayers;
 
 	// Inicializa o modo de jogo
-	m_GameMode = new TrucoGameMode(totalPlayers, new TrucoGameState(), new Deck());
+	m_GameMode = new TrucoGameMode(totalPlayers, new TrucoGameState(new Deck()));
 
 	// Inicializa os jogadores
 	m_Controllers.reserve(totalPlayers);

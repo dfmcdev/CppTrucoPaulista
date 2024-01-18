@@ -5,8 +5,8 @@ class AIPlayerState;
 class AIPlayer
 {
 private:
-	double m_minThinkTimeSeconds;
-	double m_maxThinkTimeSeconds;
+	double m_MinThinkTimeSeconds;
+	double m_MaxThinkTimeSeconds;
 	AIPlayerState* m_AIPlayerState;
 
 public:

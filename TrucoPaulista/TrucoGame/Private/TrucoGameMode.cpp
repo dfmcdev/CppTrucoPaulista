@@ -1,5 +1,6 @@
 #include "TrucoGameMode.h"
 #include "TrucoGameState.h"
+#include "GameState.h"
 #include "TrucoPlayer.h"
 #include "TrucoPlayerState.h"
 #include "Player.h"
@@ -10,18 +11,13 @@
 #include "TrucoAIPlayerState.h"
 #include "AIPlayerController.h"
 
-TrucoGameMode::TrucoGameMode(int numPlayers, TrucoGameState* gameState, Deck* deck) 
+TrucoGameMode::TrucoGameMode(int numPlayers, TrucoGameState* gameState) 
 	: GameMode(numPlayers, gameState)
 {
-	m_deck = deck;
 }
 
 TrucoGameMode::~TrucoGameMode()
 {
-	if (m_deck)
-	{
-		delete m_deck;
-	}
 }
 
 void TrucoGameMode::StartGame()
@@ -37,20 +33,26 @@ void TrucoGameMode::StartGame()
 		}
 	}
 
-	// Set initial players cards
-	m_deck->Init();
-	m_deck->Shuffle();
-
-	for (int i = 0; i < m_numStartCards; i++)
+	TrucoGameState* pTrucoGameState = dynamic_cast<TrucoGameState*>(m_GameState);
+	if (pTrucoGameState)
 	{
-		for (auto& player : players)
-		{
-			Card* card = m_deck->DrawCard();
-			TrucoPlayerState* pTrucoPlayerState = dynamic_cast<TrucoPlayerState*>(player->GetPlayerState());
+		Deck* deck = pTrucoGameState->GetDeck();
+		
+		// Set initial players cards
+		deck->Init();
+		deck->Shuffle();
 
-			if (pTrucoPlayerState)
+		for (int i = 0; i < m_NumStartCards; i++)
+		{
+			for (auto& player : players)
 			{
-				pTrucoPlayerState->GetHand()->AddCard(card);
+				Card* card = deck->DrawCard();
+				TrucoPlayerState* pTrucoPlayerState = dynamic_cast<TrucoPlayerState*>(player->GetPlayerState());
+
+				if (pTrucoPlayerState)
+				{
+					pTrucoPlayerState->GetHand()->AddCard(card);
+				}
 			}
 		}
 	}
@@ -69,9 +71,4 @@ void TrucoGameMode::OnJoined(PlayerController* pPlayerController, bool isAIContr
 	}	
 
 	GameMode::OnJoined(pPlayerController, isAIControlled);
-}
-
-Deck* TrucoGameMode::GetDeck()
-{
-	return m_deck;
 }

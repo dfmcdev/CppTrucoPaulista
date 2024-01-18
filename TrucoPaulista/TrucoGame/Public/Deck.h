@@ -8,7 +8,7 @@ class Card;
 class Deck
 {
 private:
-	std::stack<Card*> m_cards;
+	std::stack<Card*> m_Cards;
 	const int MAX_CARDS_PER_NAIPE = 10;
 	
 	void Clear();
