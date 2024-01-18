@@ -1,8 +1,12 @@
 #include "pch.h"
 #include "CppUnitTest.h"
 #include "Deck.h"
+#include "Card.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+#define _CRTDBG_MAP_ALLOC
+#include <crtdbg.h>
 
 namespace TrucoPaulistaTests
 {
@@ -12,6 +16,8 @@ namespace TrucoPaulistaTests
 
 		TEST_METHOD(ANewDeckShouldHave40CardsAfterInit)
 		{
+			_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
 			Deck* deck = new Deck();
 
 			Assert::IsTrue(deck->GetNumCards() == 0);
@@ -25,6 +31,8 @@ namespace TrucoPaulistaTests
 
 		TEST_METHOD(ShuffleShouldChangeCardPositions)
 		{
+			_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
 			Deck* deckOne = new Deck();
 			deckOne->Init();
 
@@ -35,10 +43,13 @@ namespace TrucoPaulistaTests
 
 			bool changed = false;
 
+			Card* cardFromOne = nullptr;
+			Card* cardFromTwo = nullptr;
+
 			while (deckOne->GetNumCards() > 0)
 			{
-				Card* cardFromOne = deckOne->DrawCard();
-				Card* cardFromTwo = deckTwo->DrawCard();
+				cardFromOne = deckOne->DrawCard();
+				cardFromTwo = deckTwo->DrawCard();
 
 				if (cardFromOne != cardFromTwo)
 				{
@@ -48,6 +59,12 @@ namespace TrucoPaulistaTests
 			}
 
 			Assert::IsTrue(changed);
+
+			if (cardFromOne)
+				delete cardFromOne;
+
+			if (cardFromTwo)
+				delete cardFromTwo;
 
 			delete deckOne;
 			delete deckTwo;

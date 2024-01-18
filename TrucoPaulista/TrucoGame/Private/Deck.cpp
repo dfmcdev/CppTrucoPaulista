@@ -52,7 +52,7 @@ int Deck::GetNumCards()
 
 void Deck::Shuffle()
 {
-	auto& container = m_Cards._Get_container();
+	auto container = m_Cards._Get_container();
 	std::vector<Card*> aux(container.begin(), container.end());
 
 	std::random_device rd;

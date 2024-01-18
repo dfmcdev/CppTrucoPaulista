@@ -4,6 +4,7 @@
 #include "AIPlayerState.h"
 #include "AIPlayer.h"
 #include "Result.h"
+#include "GameMode.h"
 
 GameInstance* GameInstance::m_Instance = nullptr;
 

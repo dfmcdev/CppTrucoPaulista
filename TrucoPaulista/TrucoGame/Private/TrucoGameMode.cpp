@@ -68,13 +68,23 @@ void TrucoGameMode::StartGame()
 			}
 		}
 
-		// Initialize turn
+		GameMode::StartGame();
+	}
+}
+
+void TrucoGameMode::OnGameStarted()
+{
+	GameMode::OnGameStarted();
+
+	// Initialize turn
+	TrucoGameState* pTrucoGameState = dynamic_cast<TrucoGameState*>(m_GameState);
+
+	if (pTrucoGameState)
+	{
 		pTrucoGameState->ResetTurn();
 
 		TrucoPlayer* pStartPlayer = GetStartPlayer();
-		pTrucoGameState->AdvanceTurn(pStartPlayer);
-
-		OnTurnAdvanced(pStartPlayer);
+		AdvancedTurn(pStartPlayer);
 	}
 }
 
@@ -95,4 +105,25 @@ void TrucoGameMode::OnJoined(PlayerController* pPlayerController, bool isAIContr
 
 void TrucoGameMode::OnTurnAdvanced(TrucoPlayer* turnPlayer)
 {
+	if (m_OnTurnAdvancedCallback)
+	{
+		m_OnTurnAdvancedCallback(turnPlayer);
+	}
+}
+
+void TrucoGameMode::BindTurnAdvancedCallback(std::function<void(TrucoPlayer*)> callback)
+{
+	m_OnTurnAdvancedCallback = callback;
+}
+
+void TrucoGameMode::AdvancedTurn(TrucoPlayer* turnPlayer)
+{
+	TrucoGameState* pTrucoGameState = dynamic_cast<TrucoGameState*>(m_GameState);
+
+	if (pTrucoGameState)
+	{
+		pTrucoGameState->AdvanceTurn(turnPlayer);
+	}
+
+	OnTurnAdvanced(turnPlayer);
 }

@@ -8,8 +8,12 @@
 #include "TrucoPlayerState.h"
 #include "Hand.h"
 #include "TrucoGameState.h"
+#include <functional>
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+#define _CRTDBG_MAP_ALLOC
+#include <crtdbg.h>
 
 namespace TrucoPaulistaTests
 {
@@ -19,6 +23,8 @@ namespace TrucoPaulistaTests
 
 		TEST_METHOD(JoinAndLeaveShouldIncreaseAndDescreaseNumPlayers)
 		{
+			_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
 			int numPlayers = 1;
 
 			PlayerController* controller = new PlayerController();
@@ -41,6 +47,8 @@ namespace TrucoPaulistaTests
 
 		TEST_METHOD(JoinInAFullGameShouldNotIncreaseNumPlayers)
 		{
+			_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
 			int numPlayers = 1;
 
 			PlayerController* pControllerOne = new PlayerController();
@@ -67,6 +75,8 @@ namespace TrucoPaulistaTests
 
 		TEST_METHOD(StartGameShouldGiveCardsToPlayers)
 		{
+			_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
 			int numPlayers = 2;
 
 			PlayerController* controllerOne = new PlayerController();
@@ -100,6 +110,58 @@ namespace TrucoPaulistaTests
 
 			delete controllerOne;
 			delete controllerTwo;
+			delete gameMode;
+		}
+
+		TEST_METHOD(CallStartGameShouldInvokeOnGameStartedCallback)
+		{
+			_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
+			int numPlayers = 1;
+			static bool startGameCallbackCalled = false;
+
+			PlayerController* controller = new PlayerController();
+			TrucoGameMode* gameMode = new TrucoGameMode(numPlayers, new TrucoGameState(new Deck()));
+
+			gameMode->Join(controller);
+
+			std::function<void(void)> callback = [=]() { startGameCallbackCalled = true; };
+
+			gameMode->BindGameStartedCallback(callback);
+			gameMode->StartGame();
+
+			Assert::IsTrue(startGameCallbackCalled);
+
+			delete controller;
+			delete gameMode;
+		}
+
+		TEST_METHOD(CallAdvanceTurnShouldInvokeOnTurnAdvancedCallback)
+		{
+			_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+
+			int numPlayers = 1;
+			static bool turnAdvancedCallbackCalled = false;
+			static TrucoPlayer* pTestPlayer = nullptr;
+
+			PlayerController* controller = new PlayerController();
+			TrucoGameMode* gameMode = new TrucoGameMode(numPlayers, new TrucoGameState(new Deck()));
+
+			gameMode->Join(controller);
+
+			std::function<void(TrucoPlayer*)> callback = [=](TrucoPlayer* pTrucoPlayer) 
+			{ 
+				turnAdvancedCallbackCalled = true; 
+				pTestPlayer = pTrucoPlayer;
+			};
+
+			gameMode->BindTurnAdvancedCallback(callback);
+			gameMode->StartGame();
+
+			Assert::IsTrue(turnAdvancedCallbackCalled);
+			Assert::IsNotNull(pTestPlayer);
+
+			delete controller;
 			delete gameMode;
 		}
 	};

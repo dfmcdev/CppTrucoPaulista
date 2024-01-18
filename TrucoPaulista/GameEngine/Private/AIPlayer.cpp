@@ -1,4 +1,5 @@
 #include "AIPlayer.h"
+#include "AIPlayerState.h"
 
 AIPlayer::AIPlayer(AIPlayerState* aiPlayerState, double minThinkTimeSec, double maxThinkTimeSec)
 {

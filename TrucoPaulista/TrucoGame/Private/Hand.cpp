@@ -1,4 +1,5 @@
 #include "Hand.h"
+#include "Card.h"
 
 Hand::Hand()
 {
@@ -8,6 +9,11 @@ Hand::~Hand()
 {
 	if (!m_Cards.empty())
 	{
+		for (Card* card : m_Cards)
+		{
+			delete card;
+		}
+
 		m_Cards.clear();
 	}
 }

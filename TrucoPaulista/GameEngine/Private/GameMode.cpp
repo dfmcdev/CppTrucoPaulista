@@ -10,6 +10,7 @@ GameMode::GameMode(int numPlayers, GameState* pGameState)
 	m_MaxPlayers = numPlayers;
 	m_PlayersList.reserve(numPlayers);
 	m_GameState = pGameState;
+	m_OnGameStartedCallback = nullptr;
 }
 
 GameMode::~GameMode()
@@ -30,6 +31,10 @@ void GameMode::OnLeaved(PlayerController* pPlayerController)
 
 void GameMode::OnGameStarted()
 {
+	if (m_OnGameStartedCallback)
+	{
+		m_OnGameStartedCallback();
+	}
 }
 
 void GameMode::OnGameEnded()
@@ -90,4 +95,9 @@ int GameMode::GetNumPlayers()
 GameState* GameMode::GetGameState()
 {
 	return m_GameState;
+}
+
+void GameMode::BindGameStartedCallback(std::function<void(void)> func)
+{
+	m_OnGameStartedCallback = func;
 }
