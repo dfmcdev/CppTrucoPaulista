@@ -11,7 +11,19 @@
 #include "TrucoAIPlayerState.h"
 #include "AIPlayerController.h"
 
-TrucoGameMode::TrucoGameMode(int numPlayers, TrucoGameState* gameState) 
+TrucoPlayer* TrucoGameMode::GetStartPlayer()
+{
+	TrucoPlayer* pStartPlayer = nullptr;
+
+	if (!m_PlayersList.empty())
+	{
+		pStartPlayer = dynamic_cast<TrucoPlayer*>(m_PlayersList[0]->GetControlledPlayer());
+	}
+
+	return pStartPlayer;
+}
+
+TrucoGameMode::TrucoGameMode(int numPlayers, TrucoGameState* gameState)
 	: GameMode(numPlayers, gameState)
 {
 }
@@ -55,6 +67,14 @@ void TrucoGameMode::StartGame()
 				}
 			}
 		}
+
+		// Initialize turn
+		pTrucoGameState->ResetTurn();
+
+		TrucoPlayer* pStartPlayer = GetStartPlayer();
+		pTrucoGameState->AdvanceTurn(pStartPlayer);
+
+		OnTurnAdvanced(pStartPlayer);
 	}
 }
 
@@ -71,4 +91,8 @@ void TrucoGameMode::OnJoined(PlayerController* pPlayerController, bool isAIContr
 	}	
 
 	GameMode::OnJoined(pPlayerController, isAIControlled);
+}
+
+void TrucoGameMode::OnTurnAdvanced(TrucoPlayer* turnPlayer)
+{
 }
