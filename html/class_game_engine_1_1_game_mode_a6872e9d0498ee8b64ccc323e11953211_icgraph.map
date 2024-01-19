@@ -1,0 +1,9 @@
+<map id="GameEngine::GameMode::OnGameStarted" name="GameEngine::GameMode::OnGameStarted">
+<area shape="rect" id="Node000001" title=" " alt="" coords="492,39,663,81"/>
+<area shape="rect" id="Node000002" href="$class_truco_game_1_1_truco_game_mode.html#ae6c58f4c265a5d8e2cfc31dbd52724df" title=" " alt="" coords="249,5,444,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="476,48,444,43,445,38,477,43"/>
+<area shape="rect" id="Node000003" href="$class_game_engine_1_1_game_mode.html#a18b73713889660ca2203da10145fc8df" title=" " alt="" coords="261,72,432,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="477,77,433,84,432,78,476,72"/>
+<area shape="rect" id="Node000004" href="$class_truco_game_1_1_truco_game_mode.html#a1b19559861f52a0d3a0db7030471a836" title=" " alt="" coords="5,72,201,115"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="245,96,201,96,201,91,245,91"/>
+</map>

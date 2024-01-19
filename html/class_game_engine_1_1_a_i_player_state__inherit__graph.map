@@ -1,0 +1,5 @@
+<map id="GameEngine::AIPlayerState" name="GameEngine::AIPlayerState">
+<area shape="rect" id="Node000001" title="Classe base responsavel por gerenciar o estado do Player controlado por AI." alt="" coords="5,5,181,96"/>
+<area shape="rect" id="Node000002" href="$class_truco_game_1_1_truco_a_i_player_state.html" title="Especializacao da classe AIPlayerState para um jogo de truco." alt="" coords="9,144,178,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,111,96,144,91,144,91,111"/>
+</map>

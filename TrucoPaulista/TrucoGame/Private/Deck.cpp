@@ -3,6 +3,8 @@
 #include <algorithm>
 #include <random>
 
+using namespace TrucoGame;
+
 void Deck::Init()
 {
 	DestroyCards();

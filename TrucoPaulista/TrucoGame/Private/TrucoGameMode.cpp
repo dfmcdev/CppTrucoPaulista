@@ -11,6 +11,8 @@
 #include "TrucoAIPlayerState.h"
 #include "AIPlayerController.h"
 
+using namespace TrucoGame;
+
 TrucoPlayer* TrucoGameMode::GetStartPlayer()
 {
 	TrucoPlayer* pStartPlayer = nullptr;
@@ -24,7 +26,7 @@ TrucoPlayer* TrucoGameMode::GetStartPlayer()
 }
 
 TrucoGameMode::TrucoGameMode(int numPlayers, TrucoGameState* gameState)
-	: GameMode(numPlayers, gameState)
+	: GameEngine::GameMode(numPlayers, gameState)
 {
 }
 
@@ -68,13 +70,13 @@ void TrucoGameMode::StartGame()
 			}
 		}
 
-		GameMode::StartGame();
+		GameEngine::GameMode::StartGame();
 	}
 }
 
 void TrucoGameMode::OnGameStarted()
 {
-	GameMode::OnGameStarted();
+	GameEngine::GameMode::OnGameStarted();
 
 	// Initialize turn
 	TrucoGameState* pTrucoGameState = dynamic_cast<TrucoGameState*>(m_GameState);
@@ -88,19 +90,19 @@ void TrucoGameMode::OnGameStarted()
 	}
 }
 
-void TrucoGameMode::OnJoined(PlayerController* pPlayerController, bool isAIControlled)
+void TrucoGameMode::OnJoined(GameEngine::PlayerController* pPlayerController, bool isAIControlled)
 {
 	if (isAIControlled)
 	{
 		TrucoPlayerState* pTrucoPlayerState = new TrucoPlayerState(new Hand());
-		TrucoAIPlayer* pAIPlayer = new TrucoAIPlayer(pTrucoPlayerState, new TrucoAIPlayerState(), dynamic_cast<AIPlayerController*>(pPlayerController), 2, 5);
+		TrucoAIPlayer* pAIPlayer = new TrucoAIPlayer(pTrucoPlayerState, new TrucoAIPlayerState(), dynamic_cast<GameEngine::AIPlayerController*>(pPlayerController), 2, 5);
 	}
 	else
 	{
 		TrucoPlayer* pPlayer = new TrucoPlayer(new TrucoPlayerState(new Hand()), pPlayerController);
 	}	
 
-	GameMode::OnJoined(pPlayerController, isAIControlled);
+	GameEngine::GameMode::OnJoined(pPlayerController, isAIControlled);
 }
 
 void TrucoGameMode::OnTurnAdvanced(TrucoPlayer* turnPlayer)

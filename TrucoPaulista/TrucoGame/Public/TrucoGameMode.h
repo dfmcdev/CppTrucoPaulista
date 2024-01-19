@@ -2,34 +2,36 @@
 #include "GameMode.h"
 #include <functional>
 
-class Deck;
-class TrucoPlayer;
-class TrucoGameState;
-
-/*! \class TrucoGameMode
-	\brief Especializacao da classe GameMode para um jogo de truco.
-*/
-class TrucoGameMode : public GameMode
+namespace TrucoGame
 {
-private:	
-	int m_NumStartCards = 3;
+	class Deck;
+	class TrucoPlayer;
+	class TrucoGameState;
 
-	TrucoPlayer* GetStartPlayer();
-	std::function<void(TrucoPlayer*)> m_OnTurnAdvancedCallback;
+	/*! \class TrucoGameMode
+		\brief Especializacao da classe GameMode para um jogo de truco.
+	*/
+	class TrucoGameMode : public GameEngine::GameMode
+	{
+	private:
+		int m_NumStartCards = 3;
 
-	void OnTurnAdvanced(TrucoPlayer* turnPlayer);
+		TrucoPlayer* GetStartPlayer();
+		std::function<void(TrucoPlayer*)> m_OnTurnAdvancedCallback;
 
-public:
-	TrucoGameMode(int numPlayers, TrucoGameState* gameState);
-	~TrucoGameMode();
+		void OnTurnAdvanced(TrucoPlayer* turnPlayer);
 
-	void StartGame() override;
-	void OnGameStarted() override;
-	void OnJoined(PlayerController* pPlayerController, bool isAIControlled = false) override;	
-	
-	void BindTurnAdvancedCallback(std::function<void(TrucoPlayer*)> callback);
-	void AdvancedTurn(TrucoPlayer* turnPlayer);
+	public:
+		TrucoGameMode(int numPlayers, TrucoGameState* gameState);
+		~TrucoGameMode();
 
-	int GetNumStartCards() { return m_NumStartCards; }
+		void StartGame() override;
+		void OnGameStarted() override;
+		void OnJoined(GameEngine::PlayerController* pPlayerController, bool isAIControlled = false) override;
+
+		void BindTurnAdvancedCallback(std::function<void(TrucoPlayer*)> callback);
+		void AdvancedTurn(TrucoPlayer* turnPlayer);
+
+		int GetNumStartCards() { return m_NumStartCards; }
+	};
 };
-

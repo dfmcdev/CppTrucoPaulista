@@ -1,3 +1,5 @@
 <map id="Gráfico de Hierarquia de Classes" name="Gráfico de Hierarquia de Classes">
-<area shape="rect" id="Node000000" href="$class_deck.html" title="Classe que representa o conjunto de cartas de baralho que estao disponiveis no jogo." alt="" coords="5,5,57,32"/>
+<area shape="rect" id="Node000000" href="$class_game_engine_1_1_game_mode.html" title="Classe base responsavel por gerenciar as regras do jogo." alt="" coords="5,5,177,32"/>
+<area shape="rect" id="Node000001" href="$class_truco_game_1_1_truco_game_mode.html" title="Especializacao da classe GameMode para um jogo de truco." alt="" coords="225,5,420,32"/>
+<area shape="poly" id="edge6_Node000000_Node000001" title=" " alt="" coords="192,16,224,16,224,21,192,21"/>
 </map>

@@ -2,7 +2,9 @@
 #include "TrucoPlayerState.h"
 #include "Hand.h"
 
-TrucoPlayer::TrucoPlayer(TrucoPlayerState* pTrucoPlayerState, PlayerController* pPlayerController) : 
-	Player(pTrucoPlayerState, pPlayerController)
+using namespace TrucoGame;
+
+TrucoPlayer::TrucoPlayer(TrucoPlayerState* pTrucoPlayerState, GameEngine::PlayerController* pPlayerController) : 
+	GameEngine::Player(pTrucoPlayerState, pPlayerController)
 {
 }

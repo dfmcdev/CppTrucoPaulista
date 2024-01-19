@@ -80,77 +80,77 @@ $(function() {
 <div class="textblock">
 <p><a href="hierarchy.html">Ir para a hierarquia de classes (texto)</a></p>
 </div><table border="0" cellspacing="10" cellpadding="0">
-<tr><td><img src="inherit_graph_0.png" border="0" usemap="#a_a_i_player" alt=""/>
-<map name="a_a_i_player" id="a_a_i_player">
-<area shape="rect" href="class_a_i_player.html" title="Classe base que representa o avatar controlado por AI." alt="" coords="122,5,192,32"/>
-<area shape="rect" href="class_truco_a_i_player.html" title="Especializacao da classe AIPlayer para um jogo de truco." alt="" coords="250,31,352,57"/>
-<area shape="poly" title=" " alt="" coords="208,25,250,32,249,38,207,30"/>
-<area shape="rect" href="class_player.html" title="Classe base que representa o avatar de um jogador." alt="" coords="5,56,64,83"/>
-<area shape="rect" href="class_truco_player.html" title="Especializacao da classe Player para um jogo de truco." alt="" coords="112,56,202,83"/>
-<area shape="poly" title=" " alt="" coords="79,67,111,67,111,72,79,72"/>
-<area shape="poly" title=" " alt="" coords="217,56,249,50,250,56,218,61"/>
+<tr><td><img src="inherit_graph_0.png" border="0" usemap="#a_game_engine_1_1_a_i_player" alt=""/>
+<map name="a_game_engine_1_1_a_i_player" id="a_game_engine_1_1_a_i_player">
+<area shape="rect" href="class_game_engine_1_1_a_i_player.html" title="Classe base que representa o avatar controlado por AI." alt="" coords="201,5,354,32"/>
+<area shape="rect" href="class_truco_game_1_1_truco_a_i_player.html" title="Especializacao da classe AIPlayer para um jogo de truco." alt="" coords="408,31,585,57"/>
+<area shape="poly" title=" " alt="" coords="370,27,408,31,407,36,369,32"/>
+<area shape="rect" href="class_game_engine_1_1_player.html" title="Classe base que representa o avatar de um jogador." alt="" coords="5,56,147,83"/>
+<area shape="rect" href="class_truco_game_1_1_truco_player.html" title="Especializacao da classe Player para um jogo de truco." alt="" coords="195,56,360,83"/>
+<area shape="poly" title=" " alt="" coords="162,67,194,67,194,72,162,72"/>
+<area shape="poly" title=" " alt="" coords="375,55,407,52,408,57,376,61"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_1.png" border="0" usemap="#a_a_i_player_state" alt=""/>
-<map name="a_a_i_player_state" id="a_a_i_player_state">
-<area shape="rect" href="class_a_i_player_state.html" title="Classe base responsavel por gerenciar o estado do Player controlado por AI." alt="" coords="5,5,107,32"/>
-<area shape="rect" href="class_truco_a_i_player_state.html" title="Especializacao da classe AIPlayerState para um jogo de truco." alt="" coords="155,5,288,32"/>
-<area shape="poly" title=" " alt="" coords="122,16,154,16,154,21,122,21"/>
+<tr><td><img src="inherit_graph_1.png" border="0" usemap="#a_game_engine_1_1_a_i_player_state" alt=""/>
+<map name="a_game_engine_1_1_a_i_player_state" id="a_game_engine_1_1_a_i_player_state">
+<area shape="rect" href="class_game_engine_1_1_a_i_player_state.html" title="Classe base responsavel por gerenciar o estado do Player controlado por AI." alt="" coords="5,13,190,40"/>
+<area shape="rect" href="class_truco_game_1_1_truco_a_i_player_state.html" title="Especializacao da classe AIPlayerState para um jogo de truco." alt="" coords="238,5,415,48"/>
+<area shape="poly" title=" " alt="" coords="205,24,237,24,237,29,205,29"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_2.png" border="0" usemap="#a_card" alt=""/>
-<map name="a_card" id="a_card">
-<area shape="rect" href="class_card.html" title="Classe que representa uma carte de baralho." alt="" coords="5,5,54,32"/>
+<tr><td><img src="inherit_graph_2.png" border="0" usemap="#a_game_engine_1_1_game_instance" alt=""/>
+<map name="a_game_engine_1_1_game_instance" id="a_game_engine_1_1_game_instance">
+<area shape="rect" href="class_game_engine_1_1_game_instance.html" title="Classe base que gerencia de forma geral uma instancia do jogo em execucao." alt="" coords="5,5,194,32"/>
+<area shape="rect" href="class_truco_game_1_1_truco_game_instance.html" title="Expecializacao da classe GameInstance para um jogo de truco." alt="" coords="242,5,454,32"/>
+<area shape="poly" title=" " alt="" coords="209,16,241,16,241,21,209,21"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_3.png" border="0" usemap="#a_deck" alt=""/>
-<map name="a_deck" id="a_deck">
-<area shape="rect" href="class_deck.html" title="Classe que representa o conjunto de cartas de baralho que estao disponiveis no jogo." alt="" coords="5,5,57,32"/>
+<tr><td><img src="inherit_graph_3.png" border="0" usemap="#a_game_engine_1_1_game_mode" alt=""/>
+<map name="a_game_engine_1_1_game_mode" id="a_game_engine_1_1_game_mode">
+<area shape="rect" href="class_game_engine_1_1_game_mode.html" title="Classe base responsavel por gerenciar as regras do jogo." alt="" coords="5,5,177,32"/>
+<area shape="rect" href="class_truco_game_1_1_truco_game_mode.html" title="Especializacao da classe GameMode para um jogo de truco." alt="" coords="225,5,420,32"/>
+<area shape="poly" title=" " alt="" coords="192,16,224,16,224,21,192,21"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_4.png" border="0" usemap="#a_game_instance" alt=""/>
-<map name="a_game_instance" id="a_game_instance">
-<area shape="rect" href="class_game_instance.html" title="Classe base que gerencia de forma geral uma instancia do jogo em execucao." alt="" coords="5,5,111,32"/>
-<area shape="rect" href="class_truco_game_instance.html" title="Expecializacao da classe GameInstance para um jogo de truco." alt="" coords="159,5,296,32"/>
-<area shape="poly" title=" " alt="" coords="126,16,158,16,158,21,126,21"/>
+<tr><td><img src="inherit_graph_4.png" border="0" usemap="#a_game_engine_1_1_game_state" alt=""/>
+<map name="a_game_engine_1_1_game_state" id="a_game_engine_1_1_game_state">
+<area shape="rect" href="class_game_engine_1_1_game_state.html" title="Classe base responsavel por gerenciar o estado do jogo." alt="" coords="5,5,176,32"/>
+<area shape="rect" href="class_truco_game_1_1_truco_game_state.html" title="Especializacao da classe GameState para um jogo de truco." alt="" coords="224,5,418,32"/>
+<area shape="poly" title=" " alt="" coords="191,16,223,16,223,21,191,21"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_5.png" border="0" usemap="#a_game_mode" alt=""/>
-<map name="a_game_mode" id="a_game_mode">
-<area shape="rect" href="class_game_mode.html" title="Classe base responsavel por gerenciar as regras do jogo." alt="" coords="5,5,94,32"/>
-<area shape="rect" href="class_truco_game_mode.html" title="Especializacao da classe GameMode para um jogo de truco." alt="" coords="142,5,262,32"/>
-<area shape="poly" title=" " alt="" coords="109,16,141,16,141,21,109,21"/>
+<tr><td><img src="inherit_graph_5.png" border="0" usemap="#a_game_engine_1_1_player_controller" alt=""/>
+<map name="a_game_engine_1_1_player_controller" id="a_game_engine_1_1_player_controller">
+<area shape="rect" href="class_game_engine_1_1_player_controller.html" title="Classe base que representa um jogador." alt="" coords="5,5,202,32"/>
+<area shape="rect" href="class_game_engine_1_1_a_i_player_controller.html" title="Classe base que representa um avatar controlado por AI." alt="" coords="250,5,458,32"/>
+<area shape="poly" title=" " alt="" coords="217,16,249,16,249,21,217,21"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_6.png" border="0" usemap="#a_game_state" alt=""/>
-<map name="a_game_state" id="a_game_state">
-<area shape="rect" href="class_game_state.html" title="Classe base responsavel por gerenciar o estado do jogo." alt="" coords="5,5,93,32"/>
-<area shape="rect" href="class_truco_game_state.html" title="Especializacao da classe GameState para um jogo de truco." alt="" coords="141,5,260,32"/>
-<area shape="poly" title=" " alt="" coords="108,16,140,16,140,21,108,21"/>
+<tr><td><img src="inherit_graph_6.png" border="0" usemap="#a_game_engine_1_1_player_state" alt=""/>
+<map name="a_game_engine_1_1_player_state" id="a_game_engine_1_1_player_state">
+<area shape="rect" href="class_game_engine_1_1_player_state.html" title="Classe base responsavel por gerenciar o estado do Player durante as partidas." alt="" coords="5,5,178,32"/>
+<area shape="rect" href="class_truco_game_1_1_truco_player_state.html" title="Especializacao da classe PlayerState para uma partida de truco." alt="" coords="226,5,422,32"/>
+<area shape="poly" title=" " alt="" coords="193,16,225,16,225,21,193,21"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_7.png" border="0" usemap="#a_hand" alt=""/>
-<map name="a_hand" id="a_hand">
-<area shape="rect" href="class_hand.html" title="Classe que representa as cartas de baralho que estao em posse (na mao) de um jogador." alt="" coords="5,5,57,32"/>
+<tr><td><img src="inherit_graph_7.png" border="0" usemap="#a_game_engine_1_1_result" alt=""/>
+<map name="a_game_engine_1_1_result" id="a_game_engine_1_1_result">
+<area shape="rect" href="class_game_engine_1_1_result.html" title="Classe que representa o resultado de uma operacao que pode falhar de forma aceitavel." alt="" coords="5,5,147,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_8.png" border="0" usemap="#a_player_controller" alt=""/>
-<map name="a_player_controller" id="a_player_controller">
-<area shape="rect" href="class_player_controller.html" title="Classe base que representa um jogador." alt="" coords="5,5,119,32"/>
-<area shape="rect" href="class_a_i_player_controller.html" title="Classe base que representa um avatar controlado por AI." alt="" coords="167,5,292,32"/>
-<area shape="poly" title=" " alt="" coords="134,16,166,16,166,21,134,21"/>
+<tr><td><img src="inherit_graph_8.png" border="0" usemap="#a_truco_game_1_1_card" alt=""/>
+<map name="a_truco_game_1_1_card" id="a_truco_game_1_1_card">
+<area shape="rect" href="class_truco_game_1_1_card.html" title="Classe que representa uma carte de baralho." alt="" coords="5,5,129,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_9.png" border="0" usemap="#a_player_state" alt=""/>
-<map name="a_player_state" id="a_player_state">
-<area shape="rect" href="class_player_state.html" title="Classe base responsavel por gerenciar o estado do Player durante as partidas." alt="" coords="5,5,95,32"/>
-<area shape="rect" href="class_truco_player_state.html" title="Especializacao da classe PlayerState para uma partida de truco." alt="" coords="143,5,264,32"/>
-<area shape="poly" title=" " alt="" coords="110,16,143,16,143,21,110,21"/>
+<tr><td><img src="inherit_graph_9.png" border="0" usemap="#a_truco_game_1_1_deck" alt=""/>
+<map name="a_truco_game_1_1_deck" id="a_truco_game_1_1_deck">
+<area shape="rect" href="class_truco_game_1_1_deck.html" title="Classe que representa o conjunto de cartas de baralho que estao disponiveis no jogo." alt="" coords="5,5,132,32"/>
 </map>
 </td></tr>
-<tr><td><img src="inherit_graph_10.png" border="0" usemap="#a_result" alt=""/>
-<map name="a_result" id="a_result">
-<area shape="rect" href="class_result.html" title="Classe que representa o resultado de uma operacao que pode falhar de forma aceitavel." alt="" coords="5,5,64,32"/>
+<tr><td><img src="inherit_graph_10.png" border="0" usemap="#a_truco_game_1_1_hand" alt=""/>
+<map name="a_truco_game_1_1_hand" id="a_truco_game_1_1_hand">
+<area shape="rect" href="class_truco_game_1_1_hand.html" title="Classe que representa as cartas de baralho que estao em posse (na mao) de um jogador." alt="" coords="5,5,132,32"/>
 </map>
 </td></tr>
 </table>

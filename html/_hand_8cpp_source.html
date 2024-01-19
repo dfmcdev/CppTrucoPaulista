@@ -89,68 +89,71 @@ $(function() { codefold.init(0); });
 <a href="_hand_8cpp.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="_hand_8h.html">Hand.h</a>&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_card_8h.html">Card.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_hand.html#aa733faf150351c640fc7d1bf460b07e9">    4</a></span><a class="code hl_function" href="class_hand.html#aa733faf150351c640fc7d1bf460b07e9">Hand::Hand</a>()</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>}</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_truco_game.html">TrucoGame</a>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_truco_game_1_1_hand.html#aa733faf150351c640fc7d1bf460b07e9">    6</a></span><a class="code hl_function" href="class_truco_game_1_1_hand.html#aa733faf150351c640fc7d1bf460b07e9">Hand::Hand</a>()</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>{</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}</div>
 </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_hand.html#a7ff29a6f23f98c5e57f44d23a76912be">    8</a></span><a class="code hl_function" href="class_hand.html#a7ff29a6f23f98c5e57f44d23a76912be">Hand::~Hand</a>()</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>{</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>.empty())</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keywordflow">for</span> (<a class="code hl_class" href="class_card.html">Card</a>* card : <a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>)</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>            <span class="keyword">delete</span> card;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        }</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>.clear();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_truco_game_1_1_hand.html#a7ff29a6f23f98c5e57f44d23a76912be">   10</a></span><a class="code hl_function" href="class_truco_game_1_1_hand.html#a7ff29a6f23f98c5e57f44d23a76912be">Hand::~Hand</a>()</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keywordflow">if</span> (!<a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>.empty())</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">for</span> (<a class="code hl_class" href="class_truco_game_1_1_card.html">Card</a>* card : <a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>)</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>            <span class="keyword">delete</span> card;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        }</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>.clear();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
 </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="foldopen" id="foldopen00021" data-start="{" data-end="}">
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="class_hand.html#a1a62a1d45e2471bfc3e4a9c0872a0d9c">   21</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_hand.html#a1a62a1d45e2471bfc3e4a9c0872a0d9c">Hand::SetInitalCards</a>(std::vector&lt;Card*&gt; cards)</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>{</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>.clear();</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>.insert(<a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>.end(), cards.begin(), cards.end());</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_truco_game_1_1_hand.html#a1a62a1d45e2471bfc3e4a9c0872a0d9c">   23</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_truco_game_1_1_hand.html#a1a62a1d45e2471bfc3e4a9c0872a0d9c">Hand::SetInitalCards</a>(std::vector&lt;Card*&gt; cards)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>.clear();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>.insert(<a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>.end(), cards.begin(), cards.end());</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
 </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_hand.html#a66582543d56b730573900acc4c829155">   27</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_hand.html#a66582543d56b730573900acc4c829155">Hand::AddCard</a>(<a class="code hl_class" href="class_card.html">Card</a>* card)</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>.push_back(card);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_truco_game_1_1_hand.html#a66582543d56b730573900acc4c829155">   29</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_truco_game_1_1_hand.html#a66582543d56b730573900acc4c829155">Hand::AddCard</a>(<a class="code hl_class" href="class_truco_game_1_1_card.html">Card</a>* card)</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>.push_back(card);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
 </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="class_hand.html#a6582163c013ae0f414b6d12dd50a6bcf">   32</a></span><a class="code hl_class" href="class_card.html">Card</a>* <a class="code hl_function" href="class_hand.html#a6582163c013ae0f414b6d12dd50a6bcf">Hand::PlayCard</a>(<span class="keywordtype">int</span> index)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>{</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_class" href="class_card.html">Card</a>* card = <a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>[index];</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>.erase(<a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>.begin() + index);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">return</span> card;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_truco_game_1_1_hand.html#a6582163c013ae0f414b6d12dd50a6bcf">   34</a></span><a class="code hl_class" href="class_truco_game_1_1_card.html">Card</a>* <a class="code hl_function" href="class_truco_game_1_1_hand.html#a6582163c013ae0f414b6d12dd50a6bcf">Hand::PlayCard</a>(<span class="keywordtype">int</span> index)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>{</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_class" href="class_truco_game_1_1_card.html">Card</a>* card = <a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>[index];</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>.erase(<a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>.begin() + index);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">return</span> card;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
 </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="class_hand.html#a025f59aa8c0c46903107b72b069c7b88">   40</a></span>std::vector&lt;Card*&gt; <a class="code hl_function" href="class_hand.html#a025f59aa8c0c46903107b72b069c7b88">Hand::GetCards</a>()</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">m_Cards</a>;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00042" data-start="{" data-end="}">
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="class_truco_game_1_1_hand.html#a025f59aa8c0c46903107b72b069c7b88">   42</a></span>std::vector&lt;Card*&gt; <a class="code hl_function" href="class_truco_game_1_1_hand.html#a025f59aa8c0c46903107b72b069c7b88">Hand::GetCards</a>()</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>{</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">m_Cards</a>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
 </div>
 <div class="ttc" id="a_card_8h_html"><div class="ttname"><a href="_card_8h.html">Card.h</a></div></div>
 <div class="ttc" id="a_hand_8h_html"><div class="ttname"><a href="_hand_8h.html">Hand.h</a></div></div>
-<div class="ttc" id="aclass_card_html"><div class="ttname"><a href="class_card.html">Card</a></div><div class="ttdoc">Classe que representa uma carte de baralho.</div><div class="ttdef"><b>Definição</b> <a href="_card_8h_source.html#l00018">Card.h:19</a></div></div>
-<div class="ttc" id="aclass_hand_html_a025f59aa8c0c46903107b72b069c7b88"><div class="ttname"><a href="class_hand.html#a025f59aa8c0c46903107b72b069c7b88">Hand::GetCards</a></div><div class="ttdeci">std::vector&lt; Card * &gt; GetCards()</div><div class="ttdef"><b>Definição</b> <a href="#l00040">Hand.cpp:40</a></div></div>
-<div class="ttc" id="aclass_hand_html_a1a62a1d45e2471bfc3e4a9c0872a0d9c"><div class="ttname"><a href="class_hand.html#a1a62a1d45e2471bfc3e4a9c0872a0d9c">Hand::SetInitalCards</a></div><div class="ttdeci">void SetInitalCards(std::vector&lt; Card * &gt; cards)</div><div class="ttdef"><b>Definição</b> <a href="#l00021">Hand.cpp:21</a></div></div>
-<div class="ttc" id="aclass_hand_html_a6582163c013ae0f414b6d12dd50a6bcf"><div class="ttname"><a href="class_hand.html#a6582163c013ae0f414b6d12dd50a6bcf">Hand::PlayCard</a></div><div class="ttdeci">Card * PlayCard(int index)</div><div class="ttdef"><b>Definição</b> <a href="#l00032">Hand.cpp:32</a></div></div>
-<div class="ttc" id="aclass_hand_html_a66582543d56b730573900acc4c829155"><div class="ttname"><a href="class_hand.html#a66582543d56b730573900acc4c829155">Hand::AddCard</a></div><div class="ttdeci">void AddCard(Card *card)</div><div class="ttdef"><b>Definição</b> <a href="#l00027">Hand.cpp:27</a></div></div>
-<div class="ttc" id="aclass_hand_html_a7ff29a6f23f98c5e57f44d23a76912be"><div class="ttname"><a href="class_hand.html#a7ff29a6f23f98c5e57f44d23a76912be">Hand::~Hand</a></div><div class="ttdeci">~Hand()</div><div class="ttdef"><b>Definição</b> <a href="#l00008">Hand.cpp:8</a></div></div>
-<div class="ttc" id="aclass_hand_html_aa3000fc0b4664d34ca71dfea6d1dad67"><div class="ttname"><a href="class_hand.html#aa3000fc0b4664d34ca71dfea6d1dad67">Hand::m_Cards</a></div><div class="ttdeci">std::vector&lt; Card * &gt; m_Cards</div><div class="ttdef"><b>Definição</b> <a href="_hand_8h_source.html#l00013">Hand.h:13</a></div></div>
-<div class="ttc" id="aclass_hand_html_aa733faf150351c640fc7d1bf460b07e9"><div class="ttname"><a href="class_hand.html#aa733faf150351c640fc7d1bf460b07e9">Hand::Hand</a></div><div class="ttdeci">Hand()</div><div class="ttdef"><b>Definição</b> <a href="#l00004">Hand.cpp:4</a></div></div>
+<div class="ttc" id="aclass_truco_game_1_1_card_html"><div class="ttname"><a href="class_truco_game_1_1_card.html">TrucoGame::Card</a></div><div class="ttdoc">Classe que representa uma carte de baralho.</div><div class="ttdef"><b>Definição</b> <a href="_card_8h_source.html#l00020">Card.h:21</a></div></div>
+<div class="ttc" id="aclass_truco_game_1_1_hand_html_a025f59aa8c0c46903107b72b069c7b88"><div class="ttname"><a href="class_truco_game_1_1_hand.html#a025f59aa8c0c46903107b72b069c7b88">TrucoGame::Hand::GetCards</a></div><div class="ttdeci">std::vector&lt; Card * &gt; GetCards()</div><div class="ttdef"><b>Definição</b> <a href="#l00042">Hand.cpp:42</a></div></div>
+<div class="ttc" id="aclass_truco_game_1_1_hand_html_a1a62a1d45e2471bfc3e4a9c0872a0d9c"><div class="ttname"><a href="class_truco_game_1_1_hand.html#a1a62a1d45e2471bfc3e4a9c0872a0d9c">TrucoGame::Hand::SetInitalCards</a></div><div class="ttdeci">void SetInitalCards(std::vector&lt; Card * &gt; cards)</div><div class="ttdef"><b>Definição</b> <a href="#l00023">Hand.cpp:23</a></div></div>
+<div class="ttc" id="aclass_truco_game_1_1_hand_html_a6582163c013ae0f414b6d12dd50a6bcf"><div class="ttname"><a href="class_truco_game_1_1_hand.html#a6582163c013ae0f414b6d12dd50a6bcf">TrucoGame::Hand::PlayCard</a></div><div class="ttdeci">Card * PlayCard(int index)</div><div class="ttdef"><b>Definição</b> <a href="#l00034">Hand.cpp:34</a></div></div>
+<div class="ttc" id="aclass_truco_game_1_1_hand_html_a66582543d56b730573900acc4c829155"><div class="ttname"><a href="class_truco_game_1_1_hand.html#a66582543d56b730573900acc4c829155">TrucoGame::Hand::AddCard</a></div><div class="ttdeci">void AddCard(Card *card)</div><div class="ttdef"><b>Definição</b> <a href="#l00029">Hand.cpp:29</a></div></div>
+<div class="ttc" id="aclass_truco_game_1_1_hand_html_a7ff29a6f23f98c5e57f44d23a76912be"><div class="ttname"><a href="class_truco_game_1_1_hand.html#a7ff29a6f23f98c5e57f44d23a76912be">TrucoGame::Hand::~Hand</a></div><div class="ttdeci">~Hand()</div><div class="ttdef"><b>Definição</b> <a href="#l00010">Hand.cpp:10</a></div></div>
+<div class="ttc" id="aclass_truco_game_1_1_hand_html_aa16aaffd3d0988d6a4f9de39e7864e0f"><div class="ttname"><a href="class_truco_game_1_1_hand.html#aa16aaffd3d0988d6a4f9de39e7864e0f">TrucoGame::Hand::m_Cards</a></div><div class="ttdeci">std::vector&lt; Card * &gt; m_Cards</div><div class="ttdef"><b>Definição</b> <a href="_hand_8h_source.html#l00015">Hand.h:15</a></div></div>
+<div class="ttc" id="aclass_truco_game_1_1_hand_html_aa733faf150351c640fc7d1bf460b07e9"><div class="ttname"><a href="class_truco_game_1_1_hand.html#aa733faf150351c640fc7d1bf460b07e9">TrucoGame::Hand::Hand</a></div><div class="ttdeci">Hand()</div><div class="ttdef"><b>Definição</b> <a href="#l00006">Hand.cpp:6</a></div></div>
+<div class="ttc" id="anamespace_truco_game_html"><div class="ttname"><a href="namespace_truco_game.html">TrucoGame</a></div><div class="ttdef"><b>Definição</b> <a href="_card_8h_source.html#l00003">Card.h:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['espadas_0',['Espadas',['../_card_8h.html#a133249b11982552e1b58b7893227a6a5a138929013163a7e042f33579e007f279',1,'Card.h']]]
+  ['espadas_0',['Espadas',['../namespace_truco_game.html#aaa123466c74b5ccd0415303c4f64392fad9305b3f73516fdbc2a1212a2250d05c',1,'TrucoGame']]]
 ];

@@ -1,22 +1,23 @@
 <map id="C:/Projects/CppTrucoPaulista/TrucoPaulista/TrucoGame/Private/TrucoAIPlayer.cpp" name="C:/Projects/CppTrucoPaulista/TrucoPaulista/TrucoGame/Private/TrucoAIPlayer.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="189,5,381,64"/>
-<area shape="rect" id="Node000002" href="$_truco_a_i_player_8h.html" title=" " alt="" coords="75,112,188,139"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,67,167,106,165,102,234,62"/>
-<area shape="rect" id="Node000008" href="$_truco_a_i_player_state_8h.html" title=" " alt="" coords="213,112,357,139"/>
-<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="287,64,287,96,282,96,282,64"/>
-<area shape="rect" id="Node000010" href="$_a_i_player_controller_8h.html" title=" " alt="" coords="310,261,446,288"/>
-<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="330,62,353,84,371,111,383,146,388,182,385,246,380,246,382,183,378,147,366,113,349,88,326,66"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="209,5,401,64"/>
+<area shape="rect" id="Node000002" href="$_truco_a_i_player_8h.html" title=" " alt="" coords="129,112,243,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="268,66,217,105,213,100,265,62"/>
+<area shape="rect" id="Node000008" href="$_a_i_player_controller_8h.html" title=" " alt="" coords="237,187,373,213"/>
+<area shape="poly" id="edge11_Node000001_Node000008" title=" " alt="" coords="307,64,307,171,302,171,302,64"/>
+<area shape="rect" id="Node000009" href="$_truco_a_i_player_state_8h.html" title=" " alt="" coords="361,112,505,139"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="348,62,404,101,401,105,345,67"/>
 <area shape="rect" id="Node000003" href="$_a_i_player_8h.html" title=" " alt="" coords="5,187,87,213"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="118,141,74,179,70,175,115,137"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="163,142,85,181,83,177,160,137"/>
 <area shape="rect" id="Node000004" href="$_truco_player_8h.html" title=" " alt="" coords="111,187,213,213"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="139,138,153,171,148,173,134,140"/>
-<area shape="rect" id="Node000005" href="$_player_8h.html" title=" " alt="" coords="171,261,241,288"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="172,212,193,247,188,249,167,215"/>
-<area shape="rect" id="Node000006" href="$_player_state_8h.html" title=" " alt="" coords="156,336,256,363"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="209,289,209,320,203,320,203,289"/>
-<area shape="rect" id="Node000007" href="$_player_controller_8h.html" title=" " alt="" coords="301,336,426,363"/>
-<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="235,286,323,327,321,331,232,291"/>
-<area shape="rect" id="Node000009" href="$_a_i_player_state_8h.html" title=" " alt="" coords="237,187,349,213"/>
-<area shape="poly" id="edge8_Node000008_Node000009" title=" " alt="" coords="289,139,292,171,287,171,283,140"/>
-<area shape="poly" id="edge10_Node000010_Node000007" title=" " alt="" coords="378,289,371,321,366,320,373,288"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="184,140,173,173,168,171,179,138"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="208,137,272,176,270,181,205,141"/>
+<area shape="rect" id="Node000005" href="$_player_8h.html" title=" " alt="" coords="130,261,199,288"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="165,214,166,246,161,246,160,214"/>
+<area shape="rect" id="Node000006" href="$_player_state_8h.html" title=" " alt="" coords="115,336,215,363"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="167,289,167,320,162,320,162,289"/>
+<area shape="rect" id="Node000007" href="$_player_controller_8h.html" title=" " alt="" coords="240,336,364,363"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="190,286,266,326,263,331,187,291"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="307,214,305,321,300,320,302,214"/>
+<area shape="rect" id="Node000010" href="$_a_i_player_state_8h.html" title=" " alt="" coords="397,187,509,213"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="439,138,448,171,443,173,434,140"/>
 </map>

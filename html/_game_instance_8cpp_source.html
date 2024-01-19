@@ -94,58 +94,60 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="_result_8h.html">Result.h</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="_game_mode_8h.html">GameMode.h</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><a class="code hl_class" href="class_game_instance.html">GameInstance</a>* <a class="code hl_variable" href="class_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">GameInstance::m_Instance</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespace_game_engine.html">GameEngine</a>;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_game_instance.html#a4f3070960829be253344ecb83d3e12ce">   11</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_instance.html#a4f3070960829be253344ecb83d3e12ce">GameInstance::Cleanup</a>()</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_instance.html#a8e0127d5131fe4b81c836522efb484b5">m_GameMode</a>)</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keyword">delete</span> <a class="code hl_variable" href="class_game_instance.html#a8e0127d5131fe4b81c836522efb484b5">m_GameMode</a>;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::vector&lt;PlayerController*&gt;::iterator it;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">for</span> (it = <a class="code hl_variable" href="class_game_instance.html#a329393af3ba79258b8d6f98c74543e60">m_Controllers</a>.begin(); it != <a class="code hl_variable" href="class_game_instance.html#a329393af3ba79258b8d6f98c74543e60">m_Controllers</a>.end(); it++)</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keyword">delete</span>* it;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><a class="code hl_class" href="class_game_engine_1_1_game_instance.html">GameInstance</a>* <a class="code hl_variable" href="class_game_engine_1_1_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">GameInstance::m_Instance</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_game_engine_1_1_game_instance.html#a4f3070960829be253344ecb83d3e12ce">   13</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_engine_1_1_game_instance.html#a4f3070960829be253344ecb83d3e12ce">GameInstance::Cleanup</a>()</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_engine_1_1_game_instance.html#af3892d69e617cace1414ce06e894827b">m_GameMode</a>)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        <span class="keyword">delete</span> <a class="code hl_variable" href="class_game_engine_1_1_game_instance.html#af3892d69e617cace1414ce06e894827b">m_GameMode</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::vector&lt;PlayerController*&gt;::iterator it;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span> (it = <a class="code hl_variable" href="class_game_engine_1_1_game_instance.html#aa78036cc9038aec0dfc6ce7b29d1623c">m_Controllers</a>.begin(); it != <a class="code hl_variable" href="class_game_engine_1_1_game_instance.html#aa78036cc9038aec0dfc6ce7b29d1623c">m_Controllers</a>.end(); it++)</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keyword">delete</span>* it;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_game_instance.html#a4960d24b6dbc4d273882cb55db1e022c">   25</a></span><a class="code hl_function" href="class_game_instance.html#a4960d24b6dbc4d273882cb55db1e022c">GameInstance::GameInstance</a>() : m_GameMode(nullptr)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>}</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_engine_1_1_game_instance.html#a4960d24b6dbc4d273882cb55db1e022c">   27</a></span><a class="code hl_function" href="class_game_engine_1_1_game_instance.html#a4960d24b6dbc4d273882cb55db1e022c">GameInstance::GameInstance</a>() : m_GameMode(nullptr)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="}">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="class_game_instance.html#a786574b10c67afaf2301949dda05f344">   29</a></span><a class="code hl_function" href="class_game_instance.html#a786574b10c67afaf2301949dda05f344">GameInstance::~GameInstance</a>()</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="class_game_instance.html#a4f3070960829be253344ecb83d3e12ce">Cleanup</a>();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keyword">delete</span> <a class="code hl_variable" href="class_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>}</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_game_engine_1_1_game_instance.html#a786574b10c67afaf2301949dda05f344">   31</a></span><a class="code hl_function" href="class_game_engine_1_1_game_instance.html#a786574b10c67afaf2301949dda05f344">GameInstance::~GameInstance</a>()</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>{</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <a class="code hl_function" href="class_game_engine_1_1_game_instance.html#a4f3070960829be253344ecb83d3e12ce">Cleanup</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_engine_1_1_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">delete</span> <a class="code hl_variable" href="class_game_engine_1_1_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    }</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
 </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_game_instance.html#a1a86459410531d0094d9a3dc4728e5f3">   39</a></span><a class="code hl_class" href="class_game_instance.html">GameInstance</a>* <a class="code hl_function" href="class_game_instance.html#a1a86459410531d0094d9a3dc4728e5f3">GameInstance::Get</a>()</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>{</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a> == <span class="keyword">nullptr</span>)</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <a class="code hl_variable" href="class_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a> = <span class="keyword">new</span> <a class="code hl_function" href="class_game_instance.html#a4960d24b6dbc4d273882cb55db1e022c">GameInstance</a>();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_game_engine_1_1_game_instance.html#a1a86459410531d0094d9a3dc4728e5f3">   41</a></span><a class="code hl_class" href="class_game_engine_1_1_game_instance.html">GameInstance</a>* <a class="code hl_function" href="class_game_engine_1_1_game_instance.html#a1a86459410531d0094d9a3dc4728e5f3">GameInstance::Get</a>()</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>{</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_game_engine_1_1_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a> == <span class="keyword">nullptr</span>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <a class="code hl_variable" href="class_game_engine_1_1_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a> = <span class="keyword">new</span> <a class="code hl_function" href="class_game_engine_1_1_game_instance.html#a4960d24b6dbc4d273882cb55db1e022c">GameInstance</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="class_game_engine_1_1_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_game_instance.html#a83c05c2002eda1856d435a14f27c5005">   49</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_instance.html#a83c05c2002eda1856d435a14f27c5005">GameInstance::CreateGame</a>(<span class="keywordtype">int</span> numPlayers, <span class="keywordtype">int</span> numAIPlayers, <a class="code hl_class" href="class_game_mode.html">GameMode</a>* pGameMode)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00051" data-start="{" data-end="}">
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="class_game_engine_1_1_game_instance.html#a83c05c2002eda1856d435a14f27c5005">   51</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_game_engine_1_1_game_instance.html#a83c05c2002eda1856d435a14f27c5005">GameInstance::CreateGame</a>(<span class="keywordtype">int</span> numPlayers, <span class="keywordtype">int</span> numAIPlayers, <a class="code hl_class" href="class_game_engine_1_1_game_mode.html">GameMode</a>* pGameMode)</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>{</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>}</div>
 </div>
 <div class="ttc" id="a_a_i_player_8h_html"><div class="ttname"><a href="_a_i_player_8h.html">AIPlayer.h</a></div></div>
 <div class="ttc" id="a_a_i_player_controller_8h_html"><div class="ttname"><a href="_a_i_player_controller_8h.html">AIPlayerController.h</a></div></div>
@@ -154,16 +156,17 @@ $(function() { codefold.init(0); });
 <div class="ttc" id="a_game_mode_8h_html"><div class="ttname"><a href="_game_mode_8h.html">GameMode.h</a></div></div>
 <div class="ttc" id="a_game_state_8h_html"><div class="ttname"><a href="_game_state_8h.html">GameState.h</a></div></div>
 <div class="ttc" id="a_result_8h_html"><div class="ttname"><a href="_result_8h.html">Result.h</a></div></div>
-<div class="ttc" id="aclass_game_instance_html"><div class="ttname"><a href="class_game_instance.html">GameInstance</a></div><div class="ttdoc">Classe base que gerencia de forma geral uma instancia do jogo em execucao.</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8h_source.html#l00014">GameInstance.h:15</a></div></div>
-<div class="ttc" id="aclass_game_instance_html_a06ad9d00f14d735a1b80d0b4d85b83b3"><div class="ttname"><a href="class_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">GameInstance::m_Instance</a></div><div class="ttdeci">static GameInstance * m_Instance</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8h_source.html#l00023">GameInstance.h:23</a></div></div>
-<div class="ttc" id="aclass_game_instance_html_a1a86459410531d0094d9a3dc4728e5f3"><div class="ttname"><a href="class_game_instance.html#a1a86459410531d0094d9a3dc4728e5f3">GameInstance::Get</a></div><div class="ttdeci">static GameInstance * Get()</div><div class="ttdef"><b>Definição</b> <a href="#l00039">GameInstance.cpp:39</a></div></div>
-<div class="ttc" id="aclass_game_instance_html_a329393af3ba79258b8d6f98c74543e60"><div class="ttname"><a href="class_game_instance.html#a329393af3ba79258b8d6f98c74543e60">GameInstance::m_Controllers</a></div><div class="ttdeci">std::vector&lt; PlayerController * &gt; m_Controllers</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8h_source.html#l00018">GameInstance.h:18</a></div></div>
-<div class="ttc" id="aclass_game_instance_html_a4960d24b6dbc4d273882cb55db1e022c"><div class="ttname"><a href="class_game_instance.html#a4960d24b6dbc4d273882cb55db1e022c">GameInstance::GameInstance</a></div><div class="ttdeci">GameInstance()</div><div class="ttdef"><b>Definição</b> <a href="#l00025">GameInstance.cpp:25</a></div></div>
-<div class="ttc" id="aclass_game_instance_html_a4f3070960829be253344ecb83d3e12ce"><div class="ttname"><a href="class_game_instance.html#a4f3070960829be253344ecb83d3e12ce">GameInstance::Cleanup</a></div><div class="ttdeci">void Cleanup()</div><div class="ttdef"><b>Definição</b> <a href="#l00011">GameInstance.cpp:11</a></div></div>
-<div class="ttc" id="aclass_game_instance_html_a786574b10c67afaf2301949dda05f344"><div class="ttname"><a href="class_game_instance.html#a786574b10c67afaf2301949dda05f344">GameInstance::~GameInstance</a></div><div class="ttdeci">~GameInstance()</div><div class="ttdef"><b>Definição</b> <a href="#l00029">GameInstance.cpp:29</a></div></div>
-<div class="ttc" id="aclass_game_instance_html_a83c05c2002eda1856d435a14f27c5005"><div class="ttname"><a href="class_game_instance.html#a83c05c2002eda1856d435a14f27c5005">GameInstance::CreateGame</a></div><div class="ttdeci">virtual void CreateGame(int numPlayers, int numAIPlayers, GameMode *pGameMode)</div><div class="ttdef"><b>Definição</b> <a href="#l00049">GameInstance.cpp:49</a></div></div>
-<div class="ttc" id="aclass_game_instance_html_a8e0127d5131fe4b81c836522efb484b5"><div class="ttname"><a href="class_game_instance.html#a8e0127d5131fe4b81c836522efb484b5">GameInstance::m_GameMode</a></div><div class="ttdeci">GameMode * m_GameMode</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8h_source.html#l00017">GameInstance.h:17</a></div></div>
-<div class="ttc" id="aclass_game_mode_html"><div class="ttname"><a href="class_game_mode.html">GameMode</a></div><div class="ttdoc">Classe base responsavel por gerenciar as regras do jogo.</div><div class="ttdef"><b>Definição</b> <a href="_game_mode_8h_source.html#l00013">GameMode.h:14</a></div></div>
+<div class="ttc" id="aclass_game_engine_1_1_game_instance_html"><div class="ttname"><a href="class_game_engine_1_1_game_instance.html">GameEngine::GameInstance</a></div><div class="ttdoc">Classe base que gerencia de forma geral uma instancia do jogo em execucao.</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8h_source.html#l00016">GameInstance.h:17</a></div></div>
+<div class="ttc" id="aclass_game_engine_1_1_game_instance_html_a06ad9d00f14d735a1b80d0b4d85b83b3"><div class="ttname"><a href="class_game_engine_1_1_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">GameEngine::GameInstance::m_Instance</a></div><div class="ttdeci">static GameInstance * m_Instance</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8h_source.html#l00025">GameInstance.h:25</a></div></div>
+<div class="ttc" id="aclass_game_engine_1_1_game_instance_html_a1a86459410531d0094d9a3dc4728e5f3"><div class="ttname"><a href="class_game_engine_1_1_game_instance.html#a1a86459410531d0094d9a3dc4728e5f3">GameEngine::GameInstance::Get</a></div><div class="ttdeci">static GameInstance * Get()</div><div class="ttdef"><b>Definição</b> <a href="#l00041">GameInstance.cpp:41</a></div></div>
+<div class="ttc" id="aclass_game_engine_1_1_game_instance_html_a4960d24b6dbc4d273882cb55db1e022c"><div class="ttname"><a href="class_game_engine_1_1_game_instance.html#a4960d24b6dbc4d273882cb55db1e022c">GameEngine::GameInstance::GameInstance</a></div><div class="ttdeci">GameInstance()</div><div class="ttdef"><b>Definição</b> <a href="#l00027">GameInstance.cpp:27</a></div></div>
+<div class="ttc" id="aclass_game_engine_1_1_game_instance_html_a4f3070960829be253344ecb83d3e12ce"><div class="ttname"><a href="class_game_engine_1_1_game_instance.html#a4f3070960829be253344ecb83d3e12ce">GameEngine::GameInstance::Cleanup</a></div><div class="ttdeci">void Cleanup()</div><div class="ttdef"><b>Definição</b> <a href="#l00013">GameInstance.cpp:13</a></div></div>
+<div class="ttc" id="aclass_game_engine_1_1_game_instance_html_a786574b10c67afaf2301949dda05f344"><div class="ttname"><a href="class_game_engine_1_1_game_instance.html#a786574b10c67afaf2301949dda05f344">GameEngine::GameInstance::~GameInstance</a></div><div class="ttdeci">~GameInstance()</div><div class="ttdef"><b>Definição</b> <a href="#l00031">GameInstance.cpp:31</a></div></div>
+<div class="ttc" id="aclass_game_engine_1_1_game_instance_html_a83c05c2002eda1856d435a14f27c5005"><div class="ttname"><a href="class_game_engine_1_1_game_instance.html#a83c05c2002eda1856d435a14f27c5005">GameEngine::GameInstance::CreateGame</a></div><div class="ttdeci">virtual void CreateGame(int numPlayers, int numAIPlayers, GameMode *pGameMode)</div><div class="ttdef"><b>Definição</b> <a href="#l00051">GameInstance.cpp:51</a></div></div>
+<div class="ttc" id="aclass_game_engine_1_1_game_instance_html_aa78036cc9038aec0dfc6ce7b29d1623c"><div class="ttname"><a href="class_game_engine_1_1_game_instance.html#aa78036cc9038aec0dfc6ce7b29d1623c">GameEngine::GameInstance::m_Controllers</a></div><div class="ttdeci">std::vector&lt; PlayerController * &gt; m_Controllers</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8h_source.html#l00020">GameInstance.h:20</a></div></div>
+<div class="ttc" id="aclass_game_engine_1_1_game_instance_html_af3892d69e617cace1414ce06e894827b"><div class="ttname"><a href="class_game_engine_1_1_game_instance.html#af3892d69e617cace1414ce06e894827b">GameEngine::GameInstance::m_GameMode</a></div><div class="ttdeci">GameMode * m_GameMode</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8h_source.html#l00019">GameInstance.h:19</a></div></div>
+<div class="ttc" id="aclass_game_engine_1_1_game_mode_html"><div class="ttname"><a href="class_game_engine_1_1_game_mode.html">GameEngine::GameMode</a></div><div class="ttdoc">Classe base responsavel por gerenciar as regras do jogo.</div><div class="ttdef"><b>Definição</b> <a href="_game_mode_8h_source.html#l00015">GameMode.h:16</a></div></div>
+<div class="ttc" id="anamespace_game_engine_html"><div class="ttname"><a href="namespace_game_engine.html">GameEngine</a></div><div class="ttdef"><b>Definição</b> <a href="_a_i_player_8h_source.html#l00003">AIPlayer.h:4</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

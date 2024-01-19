@@ -2,13 +2,15 @@
 #include "TrucoAIPlayerState.h"
 #include "AIPlayerController.h"
 
+using namespace TrucoGame;
+
 TrucoAIPlayer::TrucoAIPlayer(
 	TrucoPlayerState* pPlayerState,
 	TrucoAIPlayerState* pAIPlayerState, 
-	AIPlayerController* pAIPlayerController, 
+	GameEngine::AIPlayerController* pAIPlayerController, 
 	double minTinkTimeSec, 
 	double maxThinkTimeSec) : 
-		TrucoPlayer(pPlayerState, pAIPlayerController),
-		AIPlayer(pAIPlayerState, minTinkTimeSec, maxThinkTimeSec)
+		GameEngine::AIPlayer(pAIPlayerState, minTinkTimeSec, maxThinkTimeSec),
+		TrucoPlayer(pPlayerState, pAIPlayerController)
 {
 }

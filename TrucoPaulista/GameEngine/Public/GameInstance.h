@@ -2,33 +2,35 @@
 
 #include <vector>
 
-class GameMode;
-class PlayerController;
-
-/*! \class GameInstance
-	\brief Classe base que gerencia de forma geral uma instancia do jogo em execucao.
-
-	Aqui teremos controle sobre o inicio de partidas, acesso aos jogadores, configuracao de jogo, e etc.
-	E o ponto de entrada de gerenciamento e configuracao das partidas.
-*/
-class GameInstance
+namespace GameEngine
 {
-protected:
-	GameMode* m_GameMode;
-	std::vector<PlayerController*> m_Controllers;
+	class GameMode;
+	class PlayerController;
 
-	GameInstance();
-	void Cleanup();
+	/*! \class GameInstance
+		\brief Classe base que gerencia de forma geral uma instancia do jogo em execucao.
 
-	static GameInstance* m_Instance;
+		Aqui teremos controle sobre o inicio de partidas, acesso aos jogadores, configuracao de jogo, e etc.
+		E o ponto de entrada de gerenciamento e configuracao das partidas.
+	*/
+	class GameInstance
+	{
+	protected:
+		GameMode* m_GameMode;
+		std::vector<PlayerController*> m_Controllers;
 
-public:
-	~GameInstance();
-	GameInstance(GameInstance& other) = delete;
-	void operator = (const GameInstance&) = delete;
+		GameInstance();
+		void Cleanup();
 
-	static GameInstance* Get();
+		static GameInstance* m_Instance;
 
-	virtual void CreateGame(int numPlayers, int numAIPlayers, GameMode* pGameMode);
+	public:
+		~GameInstance();
+		GameInstance(GameInstance& other) = delete;
+		void operator = (const GameInstance&) = delete;
+
+		static GameInstance* Get();
+
+		virtual void CreateGame(int numPlayers, int numAIPlayers, GameMode* pGameMode);
+	};
 };
-

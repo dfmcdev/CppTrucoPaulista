@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['naipes_0',['Naipes',['../_card_8h.html#a133249b11982552e1b58b7893227a6a5',1,'Card.h']]]
+  ['naipes_0',['Naipes',['../namespace_truco_game.html#aaa123466c74b5ccd0415303c4f64392f',1,'TrucoGame']]]
 ];

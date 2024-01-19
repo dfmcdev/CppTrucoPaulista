@@ -1,6 +1,8 @@
 #include "TrucoGameState.h"
 #include "Deck.h"
 
+using namespace TrucoGame;
+
 TrucoGameState::TrucoGameState(Deck* deck) : m_TurnPlayer(nullptr)
 {
 	m_Deck = deck;

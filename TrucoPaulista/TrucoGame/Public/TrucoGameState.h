@@ -2,29 +2,32 @@
 
 #include "GameState.h"
 
-class Deck;
-class TrucoPlayer;
-
-/*! \class TrucoGameState
-	\brief Especializacao da classe GameState para um jogo de truco.
-
-	Aqui teremos as informacoes que sao relevantes apenas para a partida em curso.
-*/
-class TrucoGameState : public GameState
+namespace TrucoGame
 {
-private:
-	Deck* m_Deck;
-	int m_CurrentTurn;
+	class Deck;
+	class TrucoPlayer;
 
-	TrucoPlayer* m_TurnPlayer;
+	/*! \class TrucoGameState
+		\brief Especializacao da classe GameState para um jogo de truco.
 
-public:
-	TrucoGameState(Deck* deck);
-	~TrucoGameState();
+		Aqui teremos as informacoes que sao relevantes apenas para a partida em curso.
+	*/
+	class TrucoGameState : public GameEngine::GameState
+	{
+	private:
+		Deck* m_Deck;
+		int m_CurrentTurn;
 
-	Deck* GetDeck();
-	TrucoPlayer* GetTurnPlayer();
+		TrucoPlayer* m_TurnPlayer;
 
-	void AdvanceTurn(TrucoPlayer* turnPlayer);	
-	void ResetTurn();
+	public:
+		TrucoGameState(Deck* deck);
+		~TrucoGameState();
+
+		Deck* GetDeck();
+		TrucoPlayer* GetTurnPlayer();
+
+		void AdvanceTurn(TrucoPlayer* turnPlayer);
+		void ResetTurn();
+	};
 };

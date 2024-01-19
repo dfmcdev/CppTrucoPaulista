@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['copas_0',['Copas',['../_card_8h.html#a133249b11982552e1b58b7893227a6a5a0248eeeca9ac9e9f315a933a373910a5',1,'Card.h']]]
+  ['copas_0',['Copas',['../namespace_truco_game.html#aaa123466c74b5ccd0415303c4f64392fa5f8764fc133313b9ddad10ccb036f163',1,'TrucoGame']]]
 ];

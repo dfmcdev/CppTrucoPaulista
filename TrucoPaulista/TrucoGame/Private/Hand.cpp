@@ -1,6 +1,8 @@
 #include "Hand.h"
 #include "Card.h"
 
+using namespace TrucoGame;
+
 Hand::Hand()
 {
 }

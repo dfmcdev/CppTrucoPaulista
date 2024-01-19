@@ -1,0 +1,9 @@
+<map id="TrucoGame::TrucoAIPlayer" name="TrucoGame::TrucoAIPlayer">
+<area shape="rect" id="Node000001" title="Especializacao da classe AIPlayer para um jogo de truco." alt="" coords="103,432,273,501"/>
+<area shape="rect" id="Node000002" href="$class_game_engine_1_1_a_i_player.html" title="Classe base que representa o avatar controlado por AI." alt="" coords="5,208,181,384"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,396,172,431,167,433,147,398"/>
+<area shape="rect" id="Node000003" href="$class_truco_game_1_1_truco_player.html" title="Especializacao da classe Player para um jogo de truco." alt="" coords="205,261,363,331"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="260,345,209,434,205,431,255,342"/>
+<area shape="rect" id="Node000004" href="$class_game_engine_1_1_player.html" title="Classe base que representa o avatar de um jogador." alt="" coords="212,5,356,160"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="287,174,287,261,281,261,281,174"/>
+</map>

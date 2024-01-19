@@ -6,6 +6,8 @@
 #include "Result.h"
 #include "GameMode.h"
 
+using namespace GameEngine;
+
 GameInstance* GameInstance::m_Instance = nullptr;
 
 void GameInstance::Cleanup()

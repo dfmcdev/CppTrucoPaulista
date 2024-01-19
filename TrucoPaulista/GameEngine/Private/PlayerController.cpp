@@ -1,6 +1,8 @@
 #include "PlayerController.h"
 #include "Player.h"
 
+using namespace GameEngine;
+
 PlayerController::PlayerController() : 
 	m_IsAIControled(false), 
 	m_ControlledPlayer(nullptr)

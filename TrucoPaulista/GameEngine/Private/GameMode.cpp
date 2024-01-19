@@ -5,6 +5,8 @@
 #include "Result.h"
 #include <algorithm>
 
+using namespace GameEngine;
+
 GameMode::GameMode(int numPlayers, GameState* pGameState)
 {
 	m_MaxPlayers = numPlayers;

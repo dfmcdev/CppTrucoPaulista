@@ -1,6 +1,8 @@
 #include "AIPlayer.h"
 #include "AIPlayerState.h"
 
+using namespace GameEngine;
+
 AIPlayer::AIPlayer(AIPlayerState* aiPlayerState, double minThinkTimeSec, double maxThinkTimeSec)
 {
 	m_AIPlayerState = aiPlayerState;

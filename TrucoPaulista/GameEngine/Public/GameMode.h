@@ -3,42 +3,44 @@
 #include <vector>
 #include <functional>
 
-class Result;
-class GameState;
-class PlayerController;
-
-/*! \class GameMode
-	\brief Classe base responsavel por gerenciar as regras do jogo
-*/
-class GameMode
+namespace GameEngine
 {
-private:
-	int m_MaxPlayers = 1;
-	std::function<void(void)> m_OnGameStartedCallback;
+	class Result;
+	class GameState;
+	class PlayerController;
 
-protected:	
-	std::vector<PlayerController*> m_PlayersList;
-	GameState* m_GameState;
+	/*! \class GameMode
+		\brief Classe base responsavel por gerenciar as regras do jogo
+	*/
+	class GameMode
+	{
+	private:
+		int m_MaxPlayers = 1;
+		std::function<void(void)> m_OnGameStartedCallback;
 
-	virtual void OnJoined(PlayerController* pController, bool isAIControlled = false);
-	virtual void OnLeaved(PlayerController* pController);
+	protected:
+		std::vector<PlayerController*> m_PlayersList;
+		GameState* m_GameState;
 
-	virtual void OnGameStarted();
-	virtual void OnGameEnded();
+		virtual void OnJoined(PlayerController* pController, bool isAIControlled = false);
+		virtual void OnLeaved(PlayerController* pController);
 
-public:
-	GameMode(int maxPlayers, GameState* pGameState);
-	virtual ~GameMode();
+		virtual void OnGameStarted();
+		virtual void OnGameEnded();
 
-	Result Join(PlayerController* pController, bool isAIControlled = false);
-	void Leave(PlayerController* pController);
-	virtual void StartGame();
-	virtual void EndGame();
+	public:
+		GameMode(int maxPlayers, GameState* pGameState);
+		virtual ~GameMode();
 
-	int GetNumPlayers();
+		Result Join(PlayerController* pController, bool isAIControlled = false);
+		void Leave(PlayerController* pController);
+		virtual void StartGame();
+		virtual void EndGame();
 
-	GameState* GetGameState();
+		int GetNumPlayers();
 
-	void BindGameStartedCallback(std::function<void(void)> func);
+		GameState* GetGameState();
+
+		void BindGameStartedCallback(std::function<void(void)> func);
+	};
 };
-

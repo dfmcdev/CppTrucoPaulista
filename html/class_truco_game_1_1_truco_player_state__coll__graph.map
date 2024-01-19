@@ -1,0 +1,7 @@
+<map id="TrucoGame::TrucoPlayerState" name="TrucoGame::TrucoPlayerState">
+<area shape="rect" id="Node000001" title="Especializacao da classe PlayerState para uma partida de truco." alt="" coords="76,245,264,357"/>
+<area shape="rect" id="Node000002" href="$class_game_engine_1_1_player_state.html" title="Classe base responsavel por gerenciar o estado do Player durante as partidas." alt="" coords="5,48,169,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,151,151,245,146,247,108,153"/>
+<area shape="rect" id="Node000003" href="$class_truco_game_1_1_hand.html" title="Classe que representa as cartas de baralho que estao em posse (na mao) de um jogador." alt="" coords="194,5,311,181"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="220,182,201,231,196,229,215,180"/>
+</map>

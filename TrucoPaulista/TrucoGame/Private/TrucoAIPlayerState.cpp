@@ -1,5 +1,7 @@
 #include "TrucoAIPlayerState.h"
 
-TrucoAIPlayerState::TrucoAIPlayerState() : AIPlayerState()
+using namespace TrucoGame;
+
+TrucoAIPlayerState::TrucoAIPlayerState() : GameEngine::AIPlayerState()
 {
 }

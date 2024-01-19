@@ -1,0 +1,5 @@
+<map id="GameEngine::Player::Player" name="GameEngine::Player::Player">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,147,48"/>
+<area shape="rect" id="Node000002" href="$class_game_engine_1_1_player_controller.html#aca9d01f1a79cdde3c8df99b025346575" title=" " alt="" coords="195,5,391,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,24,179,24,179,29,147,29"/>
+</map>

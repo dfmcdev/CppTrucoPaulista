@@ -1,7 +1,9 @@
 #include "TrucoPlayerState.h"
 #include "Hand.h"
 
-TrucoPlayerState::TrucoPlayerState(Hand* hand) : PlayerState()
+using namespace TrucoGame;
+
+TrucoPlayerState::TrucoPlayerState(Hand* hand) : GameEngine::PlayerState()
 {
 	m_Hand = hand;
 }

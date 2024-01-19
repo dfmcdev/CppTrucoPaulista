@@ -1,0 +1,13 @@
+<map id="TrucoGame::TrucoGameInstance::CreateGame" name="TrucoGame::TrucoGameInstance::CreateGame">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,218,81"/>
+<area shape="rect" id="Node000002" href="$class_game_engine_1_1_game_instance.html#a4f3070960829be253344ecb83d3e12ce" title=" " alt="" coords="266,5,454,48"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,43,250,39,251,44,218,48"/>
+<area shape="rect" id="Node000003" href="$class_game_engine_1_1_game_mode.html#adbe05b7ffac27843d13655d72a4b8b23" title=" " alt="" coords="274,72,446,115"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,72,259,77,259,82,218,77"/>
+<area shape="rect" id="Node000004" href="$class_game_engine_1_1_game_mode.html#a8e6ef180d9daf915bdc4057a2b86a614" title=" " alt="" coords="502,39,673,81"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="445,78,486,72,487,77,446,83"/>
+<area shape="rect" id="Node000005" href="$class_game_engine_1_1_result.html#a351af606b74602e5a1390011207bb750" title=" " alt="" coords="517,105,658,148"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="446,103,502,111,501,117,445,108"/>
+<area shape="rect" id="Node000006" href="$class_game_engine_1_1_result.html#aff13e3e672c56d9ca8424742e783dbff" title=" " alt="" coords="721,105,863,148"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="659,124,706,124,706,129,659,129"/>
+</map>

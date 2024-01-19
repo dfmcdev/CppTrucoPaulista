@@ -24,6 +24,12 @@
 */
 var menudata={children:[
 {text:"Página Principal",url:"index.html"},
+{text:"Namespaces",url:"namespaces.html",children:[
+{text:"Lista de Namespaces",url:"namespaces.html"},
+{text:"Membros do namespace",url:"namespacemembers.html",children:[
+{text:"Todos",url:"namespacemembers.html"},
+{text:"Enumerações",url:"namespacemembers_enum.html"},
+{text:"Enumeradores",url:"namespacemembers_eval.html"}]}]},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Lista de Classes",url:"annotated.html"},
 {text:"Hierarquia de Classes",url:"inherits.html"},
@@ -65,8 +71,4 @@ var menudata={children:[
 {text:"~",url:"functions_func.html#index__7E"}]},
 {text:"Variáveis",url:"functions_vars.html"}]}]},
 {text:"Arquivos",url:"files.html",children:[
-{text:"Lista de Arquivos",url:"files.html"},
-{text:"Membros dos Arquivos",url:"globals.html",children:[
-{text:"Todos",url:"globals.html"},
-{text:"Enumerações",url:"globals_enum.html"},
-{text:"Enumeradores",url:"globals_eval.html"}]}]}]}
+{text:"Lista de Arquivos",url:"files.html"}]}]}

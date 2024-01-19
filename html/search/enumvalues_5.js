@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ouros_0',['Ouros',['../_card_8h.html#a133249b11982552e1b58b7893227a6a5a22f61c8ad7417572089aa59577c908b1',1,'Card.h']]]
+  ['ouros_0',['Ouros',['../namespace_truco_game.html#aaa123466c74b5ccd0415303c4f64392fa8ba6cc324746a9cf5d81dbc1e61438bc',1,'TrucoGame']]]
 ];

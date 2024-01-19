@@ -2,6 +2,8 @@
 #include "PlayerController.h"
 #include "PlayerState.h"
 
+using namespace GameEngine;
+
 Player::Player(PlayerState* pPlayerState, PlayerController* pPlayerController)
 {
 	m_PlayerState = pPlayerState;

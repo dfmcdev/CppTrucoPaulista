@@ -7,7 +7,9 @@
 #include "GameMode.h"
 #include "Result.h"
 
-void TrucoGameInstance::CreateGame(int numPlayers, int numAIPlayers, GameMode* pGameMode)
+using namespace TrucoGame;
+
+void TrucoGameInstance::CreateGame(int numPlayers, int numAIPlayers, GameEngine::GameMode* pGameMode)
 {
 	Cleanup();
 
@@ -21,7 +23,7 @@ void TrucoGameInstance::CreateGame(int numPlayers, int numAIPlayers, GameMode* p
 
 	for (size_t i = 0; i < numPlayers; i++)
 	{
-		PlayerController* pController = new PlayerController();
+		GameEngine::PlayerController* pController = new GameEngine::PlayerController();
 		m_Controllers.push_back(pController);
 
 		m_GameMode->Join(pController);
@@ -29,7 +31,7 @@ void TrucoGameInstance::CreateGame(int numPlayers, int numAIPlayers, GameMode* p
 
 	for (size_t i = 0; i < numAIPlayers; i++)
 	{
-		AIPlayerController* pAIController = new AIPlayerController();
+		GameEngine::AIPlayerController* pAIController = new GameEngine::AIPlayerController();
 		m_Controllers.push_back(pAIController);
 
 		m_GameMode->Join(pAIController, true);

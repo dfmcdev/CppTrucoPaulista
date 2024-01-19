@@ -1,5 +1,7 @@
 #include "Card.h"
 
+using namespace TrucoGame;
+
 Card::Card(Naipes naipe, int value) :
 	m_Naipe(naipe),
 	m_Value(value)

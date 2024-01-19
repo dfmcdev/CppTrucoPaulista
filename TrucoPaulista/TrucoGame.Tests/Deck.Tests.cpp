@@ -8,6 +8,8 @@ using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 #define _CRTDBG_MAP_ALLOC
 #include <crtdbg.h>
 
+using namespace TrucoGame;
+
 namespace TrucoPaulistaTests
 {
 	TEST_CLASS(DeckTests)
