@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Truco Paulista: Código-Fonte de C:/Projects/CppTrucoPaulista/TrucoPaulista/TrucoGame/Public/TrucoGameState.h</title>
+<link rel="icon" href="truco_logo.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="truco_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Truco Paulista<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implementação em C++ do jogo de cartas Truco Paulista</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_e27f7acb6c354cea3d58335de45d9d79.html">Projects</a></li><li class="navelem"><a class="el" href="dir_3aef8ba6162a779b90462cba93b3110c.html">CppTrucoPaulista</a></li><li class="navelem"><a class="el" href="dir_a0307bd90a6fb638cc39cefd1a759e4e.html">TrucoPaulista</a></li><li class="navelem"><a class="el" href="dir_256f98d9800d92f460266b441d40f9aa.html">TrucoGame</a></li><li class="navelem"><a class="el" href="dir_e71e807435ac92bb35761de3facc910a.html">Public</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TrucoGameState.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_truco_game_state_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_game_state_8h.html">GameState.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="class_deck.html">Deck</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span><a class="code hl_class" href="class_truco_player.html">TrucoPlayer</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_truco_game_state.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_truco_game_state.html">TrucoGameState</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_game_state.html">GameState</a></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_truco_game_state.html#ae30e10cd4c023f296b9b7e4776e38e24">   16</a></span>    <a class="code hl_class" href="class_deck.html">Deck</a>* <a class="code hl_variable" href="class_truco_game_state.html#ae30e10cd4c023f296b9b7e4776e38e24">m_Deck</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_truco_game_state.html#a984706a2b4aaf3fa39a5f954c58f8bc3">   17</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_truco_game_state.html#a984706a2b4aaf3fa39a5f954c58f8bc3">m_CurrentTurn</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="class_truco_game_state.html#aa3b85282660fee08026aa9ec7c1f1ec6">   19</a></span>    <a class="code hl_class" href="class_truco_player.html">TrucoPlayer</a>* <a class="code hl_variable" href="class_truco_game_state.html#aa3b85282660fee08026aa9ec7c1f1ec6">m_TurnPlayer</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="class_truco_game_state.html#a7a12fdf07db96d2f131aa16e7360a7ba">TrucoGameState</a>(<a class="code hl_class" href="class_deck.html">Deck</a>* deck);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="class_truco_game_state.html#a914e5974b528498a10085ec2f9828fef">~TrucoGameState</a>();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_class" href="class_deck.html">Deck</a>* <a class="code hl_function" href="class_truco_game_state.html#ae70e889ea34b4ded4d2e929cba9da7c0">GetDeck</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_class" href="class_truco_player.html">TrucoPlayer</a>* <a class="code hl_function" href="class_truco_game_state.html#adcd41c6fd3780012965c93fd48b16f5b">GetTurnPlayer</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_truco_game_state.html#a83da9da4257767f91e8ae9ef5884e62c">AdvanceTurn</a>(<a class="code hl_class" href="class_truco_player.html">TrucoPlayer</a>* turnPlayer);  </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_truco_game_state.html#a1904e9cd227aa5dc10199f66ada8089f">ResetTurn</a>();</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>};</div>
+</div>
+<div class="ttc" id="a_game_state_8h_html"><div class="ttname"><a href="_game_state_8h.html">GameState.h</a></div></div>
+<div class="ttc" id="aclass_deck_html"><div class="ttname"><a href="class_deck.html">Deck</a></div><div class="ttdoc">Classe que representa o conjunto de cartas de baralho que estao disponiveis no jogo.</div><div class="ttdef"><b>Definição</b> <a href="_deck_8h_source.html#l00011">Deck.h:12</a></div></div>
+<div class="ttc" id="aclass_game_state_html"><div class="ttname"><a href="class_game_state.html">GameState</a></div><div class="ttdoc">Classe base responsavel por gerenciar o estado do jogo.</div><div class="ttdef"><b>Definição</b> <a href="_game_state_8h_source.html#l00008">GameState.h:9</a></div></div>
+<div class="ttc" id="aclass_truco_game_state_html"><div class="ttname"><a href="class_truco_game_state.html">TrucoGameState</a></div><div class="ttdoc">Especializacao da classe GameState para um jogo de truco.</div><div class="ttdef"><b>Definição</b> <a href="#l00013">TrucoGameState.h:14</a></div></div>
+<div class="ttc" id="aclass_truco_game_state_html_a1904e9cd227aa5dc10199f66ada8089f"><div class="ttname"><a href="class_truco_game_state.html#a1904e9cd227aa5dc10199f66ada8089f">TrucoGameState::ResetTurn</a></div><div class="ttdeci">void ResetTurn()</div><div class="ttdef"><b>Definição</b> <a href="_truco_game_state_8cpp_source.html#l00034">TrucoGameState.cpp:34</a></div></div>
+<div class="ttc" id="aclass_truco_game_state_html_a7a12fdf07db96d2f131aa16e7360a7ba"><div class="ttname"><a href="class_truco_game_state.html#a7a12fdf07db96d2f131aa16e7360a7ba">TrucoGameState::TrucoGameState</a></div><div class="ttdeci">TrucoGameState(Deck *deck)</div><div class="ttdef"><b>Definição</b> <a href="_truco_game_state_8cpp_source.html#l00004">TrucoGameState.cpp:4</a></div></div>
+<div class="ttc" id="aclass_truco_game_state_html_a83da9da4257767f91e8ae9ef5884e62c"><div class="ttname"><a href="class_truco_game_state.html#a83da9da4257767f91e8ae9ef5884e62c">TrucoGameState::AdvanceTurn</a></div><div class="ttdeci">void AdvanceTurn(TrucoPlayer *turnPlayer)</div><div class="ttdef"><b>Definição</b> <a href="_truco_game_state_8cpp_source.html#l00028">TrucoGameState.cpp:28</a></div></div>
+<div class="ttc" id="aclass_truco_game_state_html_a914e5974b528498a10085ec2f9828fef"><div class="ttname"><a href="class_truco_game_state.html#a914e5974b528498a10085ec2f9828fef">TrucoGameState::~TrucoGameState</a></div><div class="ttdeci">~TrucoGameState()</div><div class="ttdef"><b>Definição</b> <a href="_truco_game_state_8cpp_source.html#l00010">TrucoGameState.cpp:10</a></div></div>
+<div class="ttc" id="aclass_truco_game_state_html_a984706a2b4aaf3fa39a5f954c58f8bc3"><div class="ttname"><a href="class_truco_game_state.html#a984706a2b4aaf3fa39a5f954c58f8bc3">TrucoGameState::m_CurrentTurn</a></div><div class="ttdeci">int m_CurrentTurn</div><div class="ttdef"><b>Definição</b> <a href="#l00017">TrucoGameState.h:17</a></div></div>
+<div class="ttc" id="aclass_truco_game_state_html_aa3b85282660fee08026aa9ec7c1f1ec6"><div class="ttname"><a href="class_truco_game_state.html#aa3b85282660fee08026aa9ec7c1f1ec6">TrucoGameState::m_TurnPlayer</a></div><div class="ttdeci">TrucoPlayer * m_TurnPlayer</div><div class="ttdef"><b>Definição</b> <a href="#l00019">TrucoGameState.h:19</a></div></div>
+<div class="ttc" id="aclass_truco_game_state_html_adcd41c6fd3780012965c93fd48b16f5b"><div class="ttname"><a href="class_truco_game_state.html#adcd41c6fd3780012965c93fd48b16f5b">TrucoGameState::GetTurnPlayer</a></div><div class="ttdeci">TrucoPlayer * GetTurnPlayer()</div><div class="ttdef"><b>Definição</b> <a href="_truco_game_state_8cpp_source.html#l00023">TrucoGameState.cpp:23</a></div></div>
+<div class="ttc" id="aclass_truco_game_state_html_ae30e10cd4c023f296b9b7e4776e38e24"><div class="ttname"><a href="class_truco_game_state.html#ae30e10cd4c023f296b9b7e4776e38e24">TrucoGameState::m_Deck</a></div><div class="ttdeci">Deck * m_Deck</div><div class="ttdef"><b>Definição</b> <a href="#l00016">TrucoGameState.h:16</a></div></div>
+<div class="ttc" id="aclass_truco_game_state_html_ae70e889ea34b4ded4d2e929cba9da7c0"><div class="ttname"><a href="class_truco_game_state.html#ae70e889ea34b4ded4d2e929cba9da7c0">TrucoGameState::GetDeck</a></div><div class="ttdeci">Deck * GetDeck()</div><div class="ttdef"><b>Definição</b> <a href="_truco_game_state_8cpp_source.html#l00018">TrucoGameState.cpp:18</a></div></div>
+<div class="ttc" id="aclass_truco_player_html"><div class="ttname"><a href="class_truco_player.html">TrucoPlayer</a></div><div class="ttdoc">Especializacao da classe Player para um jogo de truco.</div><div class="ttdef"><b>Definição</b> <a href="_truco_player_8h_source.html#l00012">TrucoPlayer.h:13</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

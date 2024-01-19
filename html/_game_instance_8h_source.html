@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Truco Paulista: Código-Fonte de C:/Projects/CppTrucoPaulista/TrucoPaulista/GameEngine/Public/GameInstance.h</title>
+<link rel="icon" href="truco_logo.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="truco_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Truco Paulista<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implementação em C++ do jogo de cartas Truco Paulista</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_e27f7acb6c354cea3d58335de45d9d79.html">Projects</a></li><li class="navelem"><a class="el" href="dir_3aef8ba6162a779b90462cba93b3110c.html">CppTrucoPaulista</a></li><li class="navelem"><a class="el" href="dir_a0307bd90a6fb638cc39cefd1a759e4e.html">TrucoPaulista</a></li><li class="navelem"><a class="el" href="dir_85417a3456240a297b3326cae75e4889.html">GameEngine</a></li><li class="navelem"><a class="el" href="dir_4db849256015734fceca2b2ff2847989.html">Public</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">GameInstance.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_game_instance_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span><a class="code hl_class" href="class_game_mode.html">GameMode</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span><a class="code hl_class" href="class_player_controller.html">PlayerController</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_game_instance.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_game_instance.html">GameInstance</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_game_instance.html#a8e0127d5131fe4b81c836522efb484b5">   17</a></span>    <a class="code hl_class" href="class_game_mode.html">GameMode</a>* <a class="code hl_variable" href="class_game_instance.html#a8e0127d5131fe4b81c836522efb484b5">m_GameMode</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_game_instance.html#a329393af3ba79258b8d6f98c74543e60">   18</a></span>    std::vector&lt;PlayerController*&gt; <a class="code hl_variable" href="class_game_instance.html#a329393af3ba79258b8d6f98c74543e60">m_Controllers</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <a class="code hl_function" href="class_game_instance.html#a4960d24b6dbc4d273882cb55db1e022c">GameInstance</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_instance.html#a4f3070960829be253344ecb83d3e12ce">Cleanup</a>();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">   23</a></span>    <span class="keyword">static</span> <a class="code hl_class" href="class_game_instance.html">GameInstance</a>* <a class="code hl_variable" href="class_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">m_Instance</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <a class="code hl_function" href="class_game_instance.html#a786574b10c67afaf2301949dda05f344">~GameInstance</a>();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_game_instance.html#a9336930a772fe7acdfd35ffa80cd2a49">   27</a></span>    <a class="code hl_function" href="class_game_instance.html#a9336930a772fe7acdfd35ffa80cd2a49">GameInstance</a>(<a class="code hl_class" href="class_game_instance.html">GameInstance</a>&amp; other) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="class_game_instance.html#ac1b5ac8ca7e3ad84d6ef37c8cac90a78">   28</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_instance.html#ac1b5ac8ca7e3ad84d6ef37c8cac90a78">operator = </a>(<span class="keyword">const</span> <a class="code hl_class" href="class_game_instance.html">GameInstance</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">static</span> <a class="code hl_class" href="class_game_instance.html">GameInstance</a>* <a class="code hl_function" href="class_game_instance.html#a1a86459410531d0094d9a3dc4728e5f3">Get</a>();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="class_game_instance.html#a83c05c2002eda1856d435a14f27c5005">CreateGame</a>(<span class="keywordtype">int</span> numPlayers, <span class="keywordtype">int</span> numAIPlayers, <a class="code hl_class" href="class_game_mode.html">GameMode</a>* pGameMode);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>};</div>
+</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="ttc" id="aclass_game_instance_html"><div class="ttname"><a href="class_game_instance.html">GameInstance</a></div><div class="ttdoc">Classe base que gerencia de forma geral uma instancia do jogo em execucao.</div><div class="ttdef"><b>Definição</b> <a href="#l00014">GameInstance.h:15</a></div></div>
+<div class="ttc" id="aclass_game_instance_html_a06ad9d00f14d735a1b80d0b4d85b83b3"><div class="ttname"><a href="class_game_instance.html#a06ad9d00f14d735a1b80d0b4d85b83b3">GameInstance::m_Instance</a></div><div class="ttdeci">static GameInstance * m_Instance</div><div class="ttdef"><b>Definição</b> <a href="#l00023">GameInstance.h:23</a></div></div>
+<div class="ttc" id="aclass_game_instance_html_a1a86459410531d0094d9a3dc4728e5f3"><div class="ttname"><a href="class_game_instance.html#a1a86459410531d0094d9a3dc4728e5f3">GameInstance::Get</a></div><div class="ttdeci">static GameInstance * Get()</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8cpp_source.html#l00039">GameInstance.cpp:39</a></div></div>
+<div class="ttc" id="aclass_game_instance_html_a329393af3ba79258b8d6f98c74543e60"><div class="ttname"><a href="class_game_instance.html#a329393af3ba79258b8d6f98c74543e60">GameInstance::m_Controllers</a></div><div class="ttdeci">std::vector&lt; PlayerController * &gt; m_Controllers</div><div class="ttdef"><b>Definição</b> <a href="#l00018">GameInstance.h:18</a></div></div>
+<div class="ttc" id="aclass_game_instance_html_a4960d24b6dbc4d273882cb55db1e022c"><div class="ttname"><a href="class_game_instance.html#a4960d24b6dbc4d273882cb55db1e022c">GameInstance::GameInstance</a></div><div class="ttdeci">GameInstance()</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8cpp_source.html#l00025">GameInstance.cpp:25</a></div></div>
+<div class="ttc" id="aclass_game_instance_html_a4f3070960829be253344ecb83d3e12ce"><div class="ttname"><a href="class_game_instance.html#a4f3070960829be253344ecb83d3e12ce">GameInstance::Cleanup</a></div><div class="ttdeci">void Cleanup()</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8cpp_source.html#l00011">GameInstance.cpp:11</a></div></div>
+<div class="ttc" id="aclass_game_instance_html_a786574b10c67afaf2301949dda05f344"><div class="ttname"><a href="class_game_instance.html#a786574b10c67afaf2301949dda05f344">GameInstance::~GameInstance</a></div><div class="ttdeci">~GameInstance()</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8cpp_source.html#l00029">GameInstance.cpp:29</a></div></div>
+<div class="ttc" id="aclass_game_instance_html_a83c05c2002eda1856d435a14f27c5005"><div class="ttname"><a href="class_game_instance.html#a83c05c2002eda1856d435a14f27c5005">GameInstance::CreateGame</a></div><div class="ttdeci">virtual void CreateGame(int numPlayers, int numAIPlayers, GameMode *pGameMode)</div><div class="ttdef"><b>Definição</b> <a href="_game_instance_8cpp_source.html#l00049">GameInstance.cpp:49</a></div></div>
+<div class="ttc" id="aclass_game_instance_html_a8e0127d5131fe4b81c836522efb484b5"><div class="ttname"><a href="class_game_instance.html#a8e0127d5131fe4b81c836522efb484b5">GameInstance::m_GameMode</a></div><div class="ttdeci">GameMode * m_GameMode</div><div class="ttdef"><b>Definição</b> <a href="#l00017">GameInstance.h:17</a></div></div>
+<div class="ttc" id="aclass_game_instance_html_a9336930a772fe7acdfd35ffa80cd2a49"><div class="ttname"><a href="class_game_instance.html#a9336930a772fe7acdfd35ffa80cd2a49">GameInstance::GameInstance</a></div><div class="ttdeci">GameInstance(GameInstance &amp;other)=delete</div></div>
+<div class="ttc" id="aclass_game_instance_html_ac1b5ac8ca7e3ad84d6ef37c8cac90a78"><div class="ttname"><a href="class_game_instance.html#ac1b5ac8ca7e3ad84d6ef37c8cac90a78">GameInstance::operator=</a></div><div class="ttdeci">void operator=(const GameInstance &amp;)=delete</div></div>
+<div class="ttc" id="aclass_game_mode_html"><div class="ttname"><a href="class_game_mode.html">GameMode</a></div><div class="ttdoc">Classe base responsavel por gerenciar as regras do jogo.</div><div class="ttdef"><b>Definição</b> <a href="_game_mode_8h_source.html#l00013">GameMode.h:14</a></div></div>
+<div class="ttc" id="aclass_player_controller_html"><div class="ttname"><a href="class_player_controller.html">PlayerController</a></div><div class="ttdoc">Classe base que representa um jogador.</div><div class="ttdef"><b>Definição</b> <a href="_player_controller_8h_source.html#l00010">PlayerController.h:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<map id="TrucoGameMode::OnGameStarted" name="TrucoGameMode::OnGameStarted">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,107,228,133"/>
+<area shape="rect" id="Node000002" href="$class_truco_game_mode.html#a7eb5e51c7c1bf1d80f6d8ee5251412bb" title=" " alt="" coords="278,31,488,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="158,103,275,67,304,59,306,64,276,72,159,109"/>
+<area shape="rect" id="Node000005" href="$class_truco_game_mode.html#a2ed8fc44e04baac345f6a5b60e6a50e0" title=" " alt="" coords="276,81,490,108"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="228,107,260,104,260,109,228,112"/>
+<area shape="rect" id="Node000006" href="$class_game_mode.html#a6872e9d0498ee8b64ccc323e11953211" title=" " alt="" coords="288,132,478,159"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="228,128,272,132,272,137,228,133"/>
+<area shape="rect" id="Node000007" href="$class_truco_game_state.html#a1904e9cd227aa5dc10199f66ada8089f" title=" " alt="" coords="290,183,476,209"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="159,131,276,168,306,176,304,181,275,173,158,137"/>
+<area shape="rect" id="Node000003" href="$class_truco_game_state.html#a83da9da4257767f91e8ae9ef5884e62c" title=" " alt="" coords="551,5,752,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="488,31,535,27,535,32,488,37"/>
+<area shape="rect" id="Node000004" href="$class_truco_game_mode.html#a72f08ebaefec1a143b54c6b2e6405b26" title=" " alt="" coords="538,56,764,83"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="488,51,523,55,522,60,488,57"/>
+</map>

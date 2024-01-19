@@ -1,0 +1,10 @@
+<map id="AIPlayerController" name="AIPlayerController">
+<area shape="rect" id="Node000001" title="Classe base que representa um avatar controlado por AI." alt="" coords="5,277,141,347"/>
+<area shape="rect" id="Node000002" href="$class_player_controller.html" title="Classe base que representa um jogador." alt="" coords="43,5,191,181"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,196,95,206,81,278,76,277,89,205,91,195"/>
+<area shape="rect" id="Node000003" href="$class_player.html" title="Classe base que representa o avatar de um jogador." alt="" coords="197,245,341,379"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="105,181,108,201,116,220,184,259,181,264,112,223,103,203,100,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="255,247,238,207,202,163,206,159,242,204,260,245"/>
+<area shape="rect" id="Node000004" href="$class_player_state.html" title="Classe base responsavel por gerenciar o estado do Player durante as partidas." alt="" coords="370,48,478,139"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="417,139,403,181,381,223,356,252,352,248,376,220,398,179,412,138"/>
+</map>

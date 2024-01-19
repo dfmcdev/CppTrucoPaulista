@@ -1,0 +1,9 @@
+<map id="C:/Projects/CppTrucoPaulista/TrucoPaulista/TrucoGame/Public/TrucoGameState.h" name="C:/Projects/CppTrucoPaulista/TrucoPaulista/TrucoGame/Public/TrucoGameState.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="239,5,432,64"/>
+<area shape="rect" id="Node000002" href="$_truco_game_instance_8cpp.html" title=" " alt="" coords="5,112,215,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="261,73,173,114,171,109,259,68"/>
+<area shape="rect" id="Node000003" href="$_truco_game_mode_8cpp.html" title=" " alt="" coords="239,112,432,171"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="338,80,338,112,333,112,333,80"/>
+<area shape="rect" id="Node000004" href="$_truco_game_state_8cpp.html" title=" " alt="" coords="455,112,648,171"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="409,69,493,109,491,114,407,73"/>
+</map>

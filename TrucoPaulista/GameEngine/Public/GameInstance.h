@@ -5,6 +5,12 @@
 class GameMode;
 class PlayerController;
 
+/*! \class GameInstance
+	\brief Classe base que gerencia de forma geral uma instancia do jogo em execucao.
+
+	Aqui teremos controle sobre o inicio de partidas, acesso aos jogadores, configuracao de jogo, e etc.
+	E o ponto de entrada de gerenciamento e configuracao das partidas.
+*/
 class GameInstance
 {
 protected:

@@ -1,0 +1,595 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Truco Paulista: Referência da Classe TrucoGameMode</title>
+<link rel="icon" href="truco_logo.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="truco_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Truco Paulista<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implementação em C++ do jogo de cartas Truco Paulista</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Membros Públicos</a> &#124;
+<a href="#pri-methods">Membros privados</a> &#124;
+<a href="#pri-attribs">Atributos Privados</a> &#124;
+<a href="class_truco_game_mode-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle"><div class="title">Referência da Classe TrucoGameMode</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Especializacao da classe <a class="el" href="class_game_mode.html" title="Classe base responsavel por gerenciar as regras do jogo.">GameMode</a> para um jogo de truco.  
+ <a href="#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_truco_game_mode_8h_source.html">TrucoGameMode.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagrama de hierarquia da classe TrucoGameMode:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_truco_game_mode__inherit__graph.png" border="0" usemap="#a_truco_game_mode_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_truco_game_mode_inherit__map" id="a_truco_game_mode_inherit__map">
+<area shape="rect" title="Especializacao da classe GameMode para um jogo de truco." alt="" coords="5,443,195,725"/>
+<area shape="rect" href="class_game_mode.html" title="Classe base responsavel por gerenciar as regras do jogo." alt="" coords="7,5,193,395"/>
+<area shape="poly" title=" " alt="" coords="103,409,103,443,97,443,97,409"/>
+</map>
+</div>
+<div class="dynheader">
+Diagrama de colaboração para TrucoGameMode:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_truco_game_mode__coll__graph.png" border="0" usemap="#a_truco_game_mode_coll__map" alt="Collaboration graph"/></div>
+<map name="a_truco_game_mode_coll__map" id="a_truco_game_mode_coll__map">
+<area shape="rect" title="Especializacao da classe GameMode para um jogo de truco." alt="" coords="5,577,195,860"/>
+<area shape="rect" href="class_game_mode.html" title="Classe base responsavel por gerenciar as regras do jogo." alt="" coords="7,160,193,528"/>
+<area shape="poly" title=" " alt="" coords="103,543,103,577,97,577,97,543"/>
+<area shape="rect" href="class_game_state.html" title="Classe base responsavel por gerenciar o estado do jogo." alt="" coords="47,5,153,96"/>
+<area shape="poly" title=" " alt="" coords="103,96,103,143,97,143,97,96"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Membros Públicos</h2></td></tr>
+<tr class="memitem:a46df91f37c3495e3e9176c0ba77f457e" id="r_a46df91f37c3495e3e9176c0ba77f457e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46df91f37c3495e3e9176c0ba77f457e">TrucoGameMode</a> (int numPlayers, <a class="el" href="class_truco_game_state.html">TrucoGameState</a> *gameState)</td></tr>
+<tr class="separator:a46df91f37c3495e3e9176c0ba77f457e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28ba890744d3311e64194fcaebf054ec" id="r_a28ba890744d3311e64194fcaebf054ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28ba890744d3311e64194fcaebf054ec">~TrucoGameMode</a> ()</td></tr>
+<tr class="separator:a28ba890744d3311e64194fcaebf054ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b19559861f52a0d3a0db7030471a836" id="r_a1b19559861f52a0d3a0db7030471a836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b19559861f52a0d3a0db7030471a836">StartGame</a> () override</td></tr>
+<tr class="separator:a1b19559861f52a0d3a0db7030471a836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c58f4c265a5d8e2cfc31dbd52724df" id="r_ae6c58f4c265a5d8e2cfc31dbd52724df"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6c58f4c265a5d8e2cfc31dbd52724df">OnGameStarted</a> () override</td></tr>
+<tr class="separator:ae6c58f4c265a5d8e2cfc31dbd52724df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc0d4377e4e11462380b6d47b4aab6d5" id="r_abc0d4377e4e11462380b6d47b4aab6d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc0d4377e4e11462380b6d47b4aab6d5">OnJoined</a> (<a class="el" href="class_player_controller.html">PlayerController</a> *pPlayerController, bool isAIControlled=false) override</td></tr>
+<tr class="separator:abc0d4377e4e11462380b6d47b4aab6d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae494cfaa388e757093bb5c87bd5aa114" id="r_ae494cfaa388e757093bb5c87bd5aa114"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae494cfaa388e757093bb5c87bd5aa114">BindTurnAdvancedCallback</a> (std::function&lt; void(<a class="el" href="class_truco_player.html">TrucoPlayer</a> *)&gt; callback)</td></tr>
+<tr class="separator:ae494cfaa388e757093bb5c87bd5aa114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb5e51c7c1bf1d80f6d8ee5251412bb" id="r_a7eb5e51c7c1bf1d80f6d8ee5251412bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7eb5e51c7c1bf1d80f6d8ee5251412bb">AdvancedTurn</a> (<a class="el" href="class_truco_player.html">TrucoPlayer</a> *turnPlayer)</td></tr>
+<tr class="separator:a7eb5e51c7c1bf1d80f6d8ee5251412bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af124e4263d55614c8ba5b862107737e3" id="r_af124e4263d55614c8ba5b862107737e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af124e4263d55614c8ba5b862107737e3">GetNumStartCards</a> ()</td></tr>
+<tr class="separator:af124e4263d55614c8ba5b862107737e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_game_mode"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_game_mode')"><img src="closed.png" alt="-"/>&#160;Membros Públicos herdados de <a class="el" href="class_game_mode.html">GameMode</a></td></tr>
+<tr class="memitem:acf9834322552446a4333789413f47f24 inherit pub_methods_class_game_mode" id="r_acf9834322552446a4333789413f47f24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#acf9834322552446a4333789413f47f24">GameMode</a> (int maxPlayers, <a class="el" href="class_game_state.html">GameState</a> *pGameState)</td></tr>
+<tr class="separator:acf9834322552446a4333789413f47f24 inherit pub_methods_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca5ef5cff88a754f5af0ec40477e5340 inherit pub_methods_class_game_mode" id="r_aca5ef5cff88a754f5af0ec40477e5340"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#aca5ef5cff88a754f5af0ec40477e5340">~GameMode</a> ()</td></tr>
+<tr class="separator:aca5ef5cff88a754f5af0ec40477e5340 inherit pub_methods_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe05b7ffac27843d13655d72a4b8b23 inherit pub_methods_class_game_mode" id="r_adbe05b7ffac27843d13655d72a4b8b23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#adbe05b7ffac27843d13655d72a4b8b23">Join</a> (<a class="el" href="class_player_controller.html">PlayerController</a> *pController, bool isAIControlled=false)</td></tr>
+<tr class="separator:adbe05b7ffac27843d13655d72a4b8b23 inherit pub_methods_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a82593ee3f23ec0cb035e06f5c06f6b inherit pub_methods_class_game_mode" id="r_a5a82593ee3f23ec0cb035e06f5c06f6b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#a5a82593ee3f23ec0cb035e06f5c06f6b">Leave</a> (<a class="el" href="class_player_controller.html">PlayerController</a> *pController)</td></tr>
+<tr class="separator:a5a82593ee3f23ec0cb035e06f5c06f6b inherit pub_methods_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e9d15d65d243d8d8dbfe90bc00ab672 inherit pub_methods_class_game_mode" id="r_a2e9d15d65d243d8d8dbfe90bc00ab672"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#a2e9d15d65d243d8d8dbfe90bc00ab672">EndGame</a> ()</td></tr>
+<tr class="separator:a2e9d15d65d243d8d8dbfe90bc00ab672 inherit pub_methods_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec7ece2a874e4d5eff7978a9eef7ade4 inherit pub_methods_class_game_mode" id="r_aec7ece2a874e4d5eff7978a9eef7ade4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#aec7ece2a874e4d5eff7978a9eef7ade4">GetNumPlayers</a> ()</td></tr>
+<tr class="separator:aec7ece2a874e4d5eff7978a9eef7ade4 inherit pub_methods_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e59d18ca343c928bc688e836b1b8fd inherit pub_methods_class_game_mode" id="r_a92e59d18ca343c928bc688e836b1b8fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_state.html">GameState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#a92e59d18ca343c928bc688e836b1b8fd">GetGameState</a> ()</td></tr>
+<tr class="separator:a92e59d18ca343c928bc688e836b1b8fd inherit pub_methods_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39c993891aa98b34300ee4adcadcf19c inherit pub_methods_class_game_mode" id="r_a39c993891aa98b34300ee4adcadcf19c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#a39c993891aa98b34300ee4adcadcf19c">BindGameStartedCallback</a> (std::function&lt; void(void)&gt; func)</td></tr>
+<tr class="separator:a39c993891aa98b34300ee4adcadcf19c inherit pub_methods_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Membros privados</h2></td></tr>
+<tr class="memitem:a2ed8fc44e04baac345f6a5b60e6a50e0" id="r_a2ed8fc44e04baac345f6a5b60e6a50e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_truco_player.html">TrucoPlayer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ed8fc44e04baac345f6a5b60e6a50e0">GetStartPlayer</a> ()</td></tr>
+<tr class="separator:a2ed8fc44e04baac345f6a5b60e6a50e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72f08ebaefec1a143b54c6b2e6405b26" id="r_a72f08ebaefec1a143b54c6b2e6405b26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72f08ebaefec1a143b54c6b2e6405b26">OnTurnAdvanced</a> (<a class="el" href="class_truco_player.html">TrucoPlayer</a> *turnPlayer)</td></tr>
+<tr class="separator:a72f08ebaefec1a143b54c6b2e6405b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atributos Privados</h2></td></tr>
+<tr class="memitem:a93a2015485f0310a2cf3086488256a01" id="r_a93a2015485f0310a2cf3086488256a01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93a2015485f0310a2cf3086488256a01">m_NumStartCards</a> = 3</td></tr>
+<tr class="separator:a93a2015485f0310a2cf3086488256a01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a005cd0ec71803867de3f4ac3b98569f0" id="r_a005cd0ec71803867de3f4ac3b98569f0"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(<a class="el" href="class_truco_player.html">TrucoPlayer</a> *)&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a005cd0ec71803867de3f4ac3b98569f0">m_OnTurnAdvancedCallback</a> )</td></tr>
+<tr class="separator:a005cd0ec71803867de3f4ac3b98569f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Outros membros herdados</h2></td></tr>
+<tr class="inherit_header pro_methods_class_game_mode"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_methods_class_game_mode')"><img src="closed.png" alt="-"/>&#160;Membros protegidos herdados de <a class="el" href="class_game_mode.html">GameMode</a></td></tr>
+<tr class="memitem:ab7b5b3a1d6efc92fd2aa5854b7406a3e inherit pro_methods_class_game_mode" id="r_ab7b5b3a1d6efc92fd2aa5854b7406a3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#ab7b5b3a1d6efc92fd2aa5854b7406a3e">OnLeaved</a> (<a class="el" href="class_player_controller.html">PlayerController</a> *pController)</td></tr>
+<tr class="separator:ab7b5b3a1d6efc92fd2aa5854b7406a3e inherit pro_methods_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96222c391e3fbf9b8d248864cb318bc4 inherit pro_methods_class_game_mode" id="r_a96222c391e3fbf9b8d248864cb318bc4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#a96222c391e3fbf9b8d248864cb318bc4">OnGameEnded</a> ()</td></tr>
+<tr class="separator:a96222c391e3fbf9b8d248864cb318bc4 inherit pro_methods_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_game_mode"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_game_mode')"><img src="closed.png" alt="-"/>&#160;Atributos Protegidos herdados de <a class="el" href="class_game_mode.html">GameMode</a></td></tr>
+<tr class="memitem:a1ae0d1a3153f108695461bd67fb999c1 inherit pro_attribs_class_game_mode" id="r_a1ae0d1a3153f108695461bd67fb999c1"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_player_controller.html">PlayerController</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#a1ae0d1a3153f108695461bd67fb999c1">m_PlayersList</a></td></tr>
+<tr class="separator:a1ae0d1a3153f108695461bd67fb999c1 inherit pro_attribs_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530c63f8dbcab822a8350a2f2367b3d7 inherit pro_attribs_class_game_mode" id="r_a530c63f8dbcab822a8350a2f2367b3d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_state.html">GameState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_game_mode.html#a530c63f8dbcab822a8350a2f2367b3d7">m_GameState</a></td></tr>
+<tr class="separator:a530c63f8dbcab822a8350a2f2367b3d7 inherit pro_attribs_class_game_mode"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Especializacao da classe <a class="el" href="class_game_mode.html" title="Classe base responsavel por gerenciar as regras do jogo.">GameMode</a> para um jogo de truco. </p>
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8h_source.html#l00012">12</a> do arquivo <a class="el" href="_truco_game_mode_8h_source.html">TrucoGameMode.h</a>.</p>
+</div><h2 class="groupheader">Construtores e Destrutores</h2>
+<a id="a46df91f37c3495e3e9176c0ba77f457e" name="a46df91f37c3495e3e9176c0ba77f457e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46df91f37c3495e3e9176c0ba77f457e">&#9670;&#160;</a></span>TrucoGameMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TrucoGameMode::TrucoGameMode </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>numPlayers</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_truco_game_state.html">TrucoGameState</a> *</td>          <td class="paramname"><span class="paramname"><em>gameState</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8cpp_source.html#l00026">26</a> do arquivo <a class="el" href="_truco_game_mode_8cpp_source.html">TrucoGameMode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a28ba890744d3311e64194fcaebf054ec" name="a28ba890744d3311e64194fcaebf054ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28ba890744d3311e64194fcaebf054ec">&#9670;&#160;</a></span>~TrucoGameMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TrucoGameMode::~TrucoGameMode </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8cpp_source.html#l00031">31</a> do arquivo <a class="el" href="_truco_game_mode_8cpp_source.html">TrucoGameMode.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a7eb5e51c7c1bf1d80f6d8ee5251412bb" name="a7eb5e51c7c1bf1d80f6d8ee5251412bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7eb5e51c7c1bf1d80f6d8ee5251412bb">&#9670;&#160;</a></span>AdvancedTurn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrucoGameMode::AdvancedTurn </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_truco_player.html">TrucoPlayer</a> *</td>          <td class="paramname"><span class="paramname"><em>turnPlayer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8cpp_source.html#l00119">119</a> do arquivo <a class="el" href="_truco_game_mode_8cpp_source.html">TrucoGameMode.cpp</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_truco_game_mode_a7eb5e51c7c1bf1d80f6d8ee5251412bb_cgraph.png" border="0" usemap="#aclass_truco_game_mode_a7eb5e51c7c1bf1d80f6d8ee5251412bb_cgraph" alt=""/></div>
+<map name="aclass_truco_game_mode_a7eb5e51c7c1bf1d80f6d8ee5251412bb_cgraph" id="aclass_truco_game_mode_a7eb5e51c7c1bf1d80f6d8ee5251412bb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,215,57"/>
+<area shape="rect" href="class_truco_game_state.html#a83da9da4257767f91e8ae9ef5884e62c" title=" " alt="" coords="275,5,477,32"/>
+<area shape="poly" title=" " alt="" coords="215,31,260,27,260,32,215,37"/>
+<area shape="rect" href="class_truco_game_mode.html#a72f08ebaefec1a143b54c6b2e6405b26" title=" " alt="" coords="263,56,489,83"/>
+<area shape="poly" title=" " alt="" coords="215,51,247,54,247,60,215,57"/>
+</map>
+</div>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_truco_game_mode_a7eb5e51c7c1bf1d80f6d8ee5251412bb_icgraph.png" border="0" usemap="#aclass_truco_game_mode_a7eb5e51c7c1bf1d80f6d8ee5251412bb_icgraph" alt=""/></div>
+<map name="aclass_truco_game_mode_a7eb5e51c7c1bf1d80f6d8ee5251412bb_icgraph" id="aclass_truco_game_mode_a7eb5e51c7c1bf1d80f6d8ee5251412bb_icgraph">
+<area shape="rect" title=" " alt="" coords="276,5,485,32"/>
+<area shape="rect" href="class_truco_game_mode.html#ae6c58f4c265a5d8e2cfc31dbd52724df" title=" " alt="" coords="5,5,228,32"/>
+<area shape="poly" title=" " alt="" coords="260,21,228,21,228,16,260,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae494cfaa388e757093bb5c87bd5aa114" name="ae494cfaa388e757093bb5c87bd5aa114"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae494cfaa388e757093bb5c87bd5aa114">&#9670;&#160;</a></span>BindTurnAdvancedCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrucoGameMode::BindTurnAdvancedCallback </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="class_truco_player.html">TrucoPlayer</a> *)&gt;</td>          <td class="paramname"><span class="paramname"><em>callback</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8cpp_source.html#l00114">114</a> do arquivo <a class="el" href="_truco_game_mode_8cpp_source.html">TrucoGameMode.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af124e4263d55614c8ba5b862107737e3" name="af124e4263d55614c8ba5b862107737e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af124e4263d55614c8ba5b862107737e3">&#9670;&#160;</a></span>GetNumStartCards()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TrucoGameMode::GetNumStartCards </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8h_source.html#l00033">33</a> do arquivo <a class="el" href="_truco_game_mode_8h_source.html">TrucoGameMode.h</a>.</p>
+
+</div>
+</div>
+<a id="a2ed8fc44e04baac345f6a5b60e6a50e0" name="a2ed8fc44e04baac345f6a5b60e6a50e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed8fc44e04baac345f6a5b60e6a50e0">&#9670;&#160;</a></span>GetStartPlayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_truco_player.html">TrucoPlayer</a> * TrucoGameMode::GetStartPlayer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8cpp_source.html#l00014">14</a> do arquivo <a class="el" href="_truco_game_mode_8cpp_source.html">TrucoGameMode.cpp</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_truco_game_mode_a2ed8fc44e04baac345f6a5b60e6a50e0_icgraph.png" border="0" usemap="#aclass_truco_game_mode_a2ed8fc44e04baac345f6a5b60e6a50e0_icgraph" alt=""/></div>
+<map name="aclass_truco_game_mode_a2ed8fc44e04baac345f6a5b60e6a50e0_icgraph" id="aclass_truco_game_mode_a2ed8fc44e04baac345f6a5b60e6a50e0_icgraph">
+<area shape="rect" title=" " alt="" coords="276,5,490,32"/>
+<area shape="rect" href="class_truco_game_mode.html#ae6c58f4c265a5d8e2cfc31dbd52724df" title=" " alt="" coords="5,5,228,32"/>
+<area shape="poly" title=" " alt="" coords="260,21,228,21,228,16,260,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae6c58f4c265a5d8e2cfc31dbd52724df" name="ae6c58f4c265a5d8e2cfc31dbd52724df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c58f4c265a5d8e2cfc31dbd52724df">&#9670;&#160;</a></span>OnGameStarted()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrucoGameMode::OnGameStarted </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplementa <a class="el" href="class_game_mode.html#a6872e9d0498ee8b64ccc323e11953211">GameMode</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8cpp_source.html#l00075">75</a> do arquivo <a class="el" href="_truco_game_mode_8cpp_source.html">TrucoGameMode.cpp</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_truco_game_mode_ae6c58f4c265a5d8e2cfc31dbd52724df_cgraph.png" border="0" usemap="#aclass_truco_game_mode_ae6c58f4c265a5d8e2cfc31dbd52724df_cgraph" alt=""/></div>
+<map name="aclass_truco_game_mode_ae6c58f4c265a5d8e2cfc31dbd52724df_cgraph" id="aclass_truco_game_mode_ae6c58f4c265a5d8e2cfc31dbd52724df_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,228,133"/>
+<area shape="rect" href="class_truco_game_mode.html#a7eb5e51c7c1bf1d80f6d8ee5251412bb" title=" " alt="" coords="278,31,488,57"/>
+<area shape="poly" title=" " alt="" coords="158,103,275,67,304,59,306,64,276,72,159,109"/>
+<area shape="rect" href="class_truco_game_mode.html#a2ed8fc44e04baac345f6a5b60e6a50e0" title=" " alt="" coords="276,81,490,108"/>
+<area shape="poly" title=" " alt="" coords="228,107,260,104,260,109,228,112"/>
+<area shape="rect" href="class_game_mode.html#a6872e9d0498ee8b64ccc323e11953211" title=" " alt="" coords="288,132,478,159"/>
+<area shape="poly" title=" " alt="" coords="228,128,272,132,272,137,228,133"/>
+<area shape="rect" href="class_truco_game_state.html#a1904e9cd227aa5dc10199f66ada8089f" title=" " alt="" coords="290,183,476,209"/>
+<area shape="poly" title=" " alt="" coords="159,131,276,168,306,176,304,181,275,173,158,137"/>
+<area shape="rect" href="class_truco_game_state.html#a83da9da4257767f91e8ae9ef5884e62c" title=" " alt="" coords="551,5,752,32"/>
+<area shape="poly" title=" " alt="" coords="488,31,535,27,535,32,488,37"/>
+<area shape="rect" href="class_truco_game_mode.html#a72f08ebaefec1a143b54c6b2e6405b26" title=" " alt="" coords="538,56,764,83"/>
+<area shape="poly" title=" " alt="" coords="488,51,523,55,522,60,488,57"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abc0d4377e4e11462380b6d47b4aab6d5" name="abc0d4377e4e11462380b6d47b4aab6d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc0d4377e4e11462380b6d47b4aab6d5">&#9670;&#160;</a></span>OnJoined()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrucoGameMode::OnJoined </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player_controller.html">PlayerController</a> *</td>          <td class="paramname"><span class="paramname"><em>pPlayerController</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>isAIControlled</em><span class="paramdefsep"> = </span><span class="paramdefval">false</span></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplementa <a class="el" href="class_game_mode.html#a8e6ef180d9daf915bdc4057a2b86a614">GameMode</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8cpp_source.html#l00091">91</a> do arquivo <a class="el" href="_truco_game_mode_8cpp_source.html">TrucoGameMode.cpp</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_truco_game_mode_abc0d4377e4e11462380b6d47b4aab6d5_cgraph.png" border="0" usemap="#aclass_truco_game_mode_abc0d4377e4e11462380b6d47b4aab6d5_cgraph" alt=""/></div>
+<map name="aclass_truco_game_mode_abc0d4377e4e11462380b6d47b4aab6d5_cgraph" id="aclass_truco_game_mode_abc0d4377e4e11462380b6d47b4aab6d5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" href="class_game_mode.html#a8e6ef180d9daf915bdc4057a2b86a614" title=" " alt="" coords="236,5,386,32"/>
+<area shape="poly" title=" " alt="" coords="188,16,220,16,220,21,188,21"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a72f08ebaefec1a143b54c6b2e6405b26" name="a72f08ebaefec1a143b54c6b2e6405b26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a72f08ebaefec1a143b54c6b2e6405b26">&#9670;&#160;</a></span>OnTurnAdvanced()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrucoGameMode::OnTurnAdvanced </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_truco_player.html">TrucoPlayer</a> *</td>          <td class="paramname"><span class="paramname"><em>turnPlayer</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8cpp_source.html#l00106">106</a> do arquivo <a class="el" href="_truco_game_mode_8cpp_source.html">TrucoGameMode.cpp</a>.</p>
+<div class="dynheader">
+Esse é o diagrama das funções que utilizam essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_truco_game_mode_a72f08ebaefec1a143b54c6b2e6405b26_icgraph.png" border="0" usemap="#aclass_truco_game_mode_a72f08ebaefec1a143b54c6b2e6405b26_icgraph" alt=""/></div>
+<map name="aclass_truco_game_mode_a72f08ebaefec1a143b54c6b2e6405b26_icgraph" id="aclass_truco_game_mode_a72f08ebaefec1a143b54c6b2e6405b26_icgraph">
+<area shape="rect" title=" " alt="" coords="533,5,759,32"/>
+<area shape="rect" href="class_truco_game_mode.html#a7eb5e51c7c1bf1d80f6d8ee5251412bb" title=" " alt="" coords="276,5,485,32"/>
+<area shape="poly" title=" " alt="" coords="517,21,485,21,485,16,517,16"/>
+<area shape="rect" href="class_truco_game_mode.html#ae6c58f4c265a5d8e2cfc31dbd52724df" title=" " alt="" coords="5,5,228,32"/>
+<area shape="poly" title=" " alt="" coords="260,21,228,21,228,16,260,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1b19559861f52a0d3a0db7030471a836" name="a1b19559861f52a0d3a0db7030471a836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b19559861f52a0d3a0db7030471a836">&#9670;&#160;</a></span>StartGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrucoGameMode::StartGame </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplementa <a class="el" href="class_game_mode.html#a18b73713889660ca2203da10145fc8df">GameMode</a>.</p>
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8cpp_source.html#l00035">35</a> do arquivo <a class="el" href="_truco_game_mode_8cpp_source.html">TrucoGameMode.cpp</a>.</p>
+<div class="dynheader">
+Este é o diagrama das funções utilizadas por essa função:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_truco_game_mode_a1b19559861f52a0d3a0db7030471a836_cgraph.png" border="0" usemap="#aclass_truco_game_mode_a1b19559861f52a0d3a0db7030471a836_cgraph" alt=""/></div>
+<map name="aclass_truco_game_mode_a1b19559861f52a0d3a0db7030471a836_cgraph" id="aclass_truco_game_mode_a1b19559861f52a0d3a0db7030471a836_cgraph">
+<area shape="rect" title=" " alt="" coords="5,157,197,184"/>
+<area shape="rect" href="class_hand.html#a66582543d56b730573900acc4c829155" title=" " alt="" coords="280,5,390,32"/>
+<area shape="poly" title=" " alt="" coords="112,155,165,100,202,69,243,42,265,32,267,37,246,46,205,73,168,104,116,159"/>
+<area shape="rect" href="class_deck.html#a9a2594dd324c7bb8323645d8413aff5f" title=" " alt="" coords="277,56,393,83"/>
+<area shape="poly" title=" " alt="" coords="123,154,177,124,244,92,263,85,265,90,246,97,180,129,126,159"/>
+<area shape="rect" href="class_truco_game_state.html#ae70e889ea34b4ded4d2e929cba9da7c0" title=" " alt="" coords="246,107,424,133"/>
+<area shape="poly" title=" " alt="" coords="166,154,255,135,256,140,167,159"/>
+<area shape="rect" href="class_truco_player_state.html#ab0291ff4dcb5a6efecc1c3fbd47aaf44" title=" " alt="" coords="245,157,425,184"/>
+<area shape="poly" title=" " alt="" coords="197,168,229,168,229,173,197,173"/>
+<area shape="rect" href="class_deck.html#a7116bc62fe8a7c83d76b6db3f50d9a85" title=" " alt="" coords="297,208,373,235"/>
+<area shape="poly" title=" " alt="" coords="167,182,282,207,281,213,166,187"/>
+<area shape="rect" href="class_deck.html#a1ed471063f40cb91c7e6786aa21737ef" title=" " alt="" coords="286,259,384,285"/>
+<area shape="poly" title=" " alt="" coords="126,182,180,213,246,244,272,253,270,258,244,249,177,218,123,187"/>
+<area shape="rect" href="class_game_mode.html#a18b73713889660ca2203da10145fc8df" title=" " alt="" coords="255,309,415,336"/>
+<area shape="poly" title=" " alt="" coords="116,182,168,237,205,268,246,295,258,301,255,306,243,300,202,272,165,241,112,186"/>
+<area shape="rect" href="class_deck.html#a9f4989c7d19ce572d21af54d4edccd1d" title=" " alt="" coords="499,208,637,235"/>
+<area shape="poly" title=" " alt="" coords="373,219,483,219,483,224,373,224"/>
+<area shape="rect" href="class_deck.html#ac07ee455565204c31eaabc94f4016267" title=" " alt="" coords="524,259,613,285"/>
+<area shape="poly" title=" " alt="" coords="385,269,508,269,508,275,385,275"/>
+<area shape="rect" href="class_game_mode.html#a6872e9d0498ee8b64ccc323e11953211" title=" " alt="" coords="473,309,663,336"/>
+<area shape="poly" title=" " alt="" coords="415,320,458,320,458,325,415,325"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Atributos</h2>
+<a id="a93a2015485f0310a2cf3086488256a01" name="a93a2015485f0310a2cf3086488256a01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93a2015485f0310a2cf3086488256a01">&#9670;&#160;</a></span>m_NumStartCards</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TrucoGameMode::m_NumStartCards = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8h_source.html#l00015">15</a> do arquivo <a class="el" href="_truco_game_mode_8h_source.html">TrucoGameMode.h</a>.</p>
+
+</div>
+</div>
+<a id="a005cd0ec71803867de3f4ac3b98569f0" name="a005cd0ec71803867de3f4ac3b98569f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a005cd0ec71803867de3f4ac3b98569f0">&#9670;&#160;</a></span>m_OnTurnAdvancedCallback</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(<a class="el" href="class_truco_player.html">TrucoPlayer</a>*) TrucoGameMode::m_OnTurnAdvancedCallback) </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="_truco_game_mode_8h_source.html#l00018">18</a> do arquivo <a class="el" href="_truco_game_mode_8h_source.html">TrucoGameMode.h</a>.</p>
+
+</div>
+</div>
+<hr/>A documentação para essa classe foi gerada a partir dos seguintes arquivos:<ul>
+<li>C:/Projects/CppTrucoPaulista/TrucoPaulista/TrucoGame/Public/<a class="el" href="_truco_game_mode_8h_source.html">TrucoGameMode.h</a></li>
+<li>C:/Projects/CppTrucoPaulista/TrucoPaulista/TrucoGame/Private/<a class="el" href="_truco_game_mode_8cpp_source.html">TrucoGameMode.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

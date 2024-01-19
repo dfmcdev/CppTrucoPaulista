@@ -5,6 +5,11 @@
 class Deck;
 class TrucoPlayer;
 
+/*! \class TrucoGameState
+	\brief Especializacao da classe GameState para um jogo de truco.
+
+	Aqui teremos as informacoes que sao relevantes apenas para a partida em curso.
+*/
 class TrucoGameState : public GameState
 {
 private:

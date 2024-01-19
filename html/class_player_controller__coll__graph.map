@@ -1,0 +1,8 @@
+<map id="PlayerController" name="PlayerController">
+<area shape="rect" id="Node000001" title="Classe base que representa um jogador." alt="" coords="17,5,165,181"/>
+<area shape="rect" id="Node000002" href="$class_player.html" title="Classe base que representa o avatar de um jogador." alt="" coords="95,245,239,379"/>
+<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="20,164,9,193,9,206,14,220,27,238,43,254,81,278,79,283,40,258,23,242,9,223,4,207,3,192,15,162"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,246,135,206,133,198,138,197,141,204,153,245"/>
+<area shape="rect" id="Node000003" href="$class_player_state.html" title="Classe base responsavel por gerenciar o estado do Player durante as partidas." alt="" coords="268,48,376,139"/>
+<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="313,139,298,181,275,223,254,248,249,245,270,220,293,179,308,137"/>
+</map>

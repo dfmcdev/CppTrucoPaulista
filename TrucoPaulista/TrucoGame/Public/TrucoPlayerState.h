@@ -4,6 +4,11 @@
 
 class Hand;
 
+/*! \class TrucoPlayerState
+	\brief Especializacao da classe PlayerState para uma partida de truco.
+
+	Aqui teremos as informacoes que sao relevantes apenas para a partida em curso.
+*/
 class TrucoPlayerState : public PlayerState
 {
 private:

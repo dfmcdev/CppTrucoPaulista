@@ -1,0 +1,7 @@
+<map id="Deck::Clear" name="Deck::Clear">
+<area shape="rect" id="Node000001" title=" " alt="" coords="391,5,480,32"/>
+<area shape="rect" id="Node000002" href="$class_deck.html#a1ed471063f40cb91c7e6786aa21737ef" title=" " alt="" coords="245,5,343,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="375,21,344,21,344,16,375,16"/>
+<area shape="rect" id="Node000003" href="$class_truco_game_mode.html#a1b19559861f52a0d3a0db7030471a836" title=" " alt="" coords="5,5,197,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,21,197,21,197,16,229,16"/>
+</map>

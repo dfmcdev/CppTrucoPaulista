@@ -5,6 +5,9 @@
 
 class Card;
 
+/*! \class Deck
+	\brief Classe que representa o conjunto de cartas de baralho que estao disponiveis no jogo.
+*/
 class Deck
 {
 private:

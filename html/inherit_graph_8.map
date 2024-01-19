@@ -1,0 +1,5 @@
+<map id="Gráfico de Hierarquia de Classes" name="Gráfico de Hierarquia de Classes">
+<area shape="rect" id="Node000000" href="$class_player_controller.html" title="Classe base que representa um jogador." alt="" coords="5,5,119,32"/>
+<area shape="rect" id="Node000001" href="$class_a_i_player_controller.html" title="Classe base que representa um avatar controlado por AI." alt="" coords="167,5,292,32"/>
+<area shape="poly" id="edge8_Node000000_Node000001" title=" " alt="" coords="134,16,166,16,166,21,134,21"/>
+</map>

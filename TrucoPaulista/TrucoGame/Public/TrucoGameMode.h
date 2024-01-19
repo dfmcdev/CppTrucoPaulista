@@ -6,6 +6,9 @@ class Deck;
 class TrucoPlayer;
 class TrucoGameState;
 
+/*! \class TrucoGameMode
+	\brief Especializacao da classe GameMode para um jogo de truco.
+*/
 class TrucoGameMode : public GameMode
 {
 private:	

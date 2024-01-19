@@ -1,5 +1,8 @@
 #pragma once
 
+/*! \enum Naipes
+	\brief Enumeracao que representa os possiveis naipes de um baralho.
+*/
 enum Naipes : int
 {
 	Paus,
@@ -9,6 +12,9 @@ enum Naipes : int
 	Last
 };
 
+/*! \class Card
+	\brief Classe que representa uma carte de baralho.
+*/
 class Card
 {
 private:

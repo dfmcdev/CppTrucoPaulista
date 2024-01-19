@@ -1,0 +1,9 @@
+<map id="GameMode::Join" name="GameMode::Join">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,125,57"/>
+<area shape="rect" id="Node000002" href="$class_game_mode.html#a8e6ef180d9daf915bdc4057a2b86a614" title=" " alt="" coords="173,5,323,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,33,157,29,157,34,126,38"/>
+<area shape="rect" id="Node000003" href="$class_result.html#ab052e89dd0a4066af5c44238c38bf683" title=" " alt="" coords="189,56,307,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,50,174,56,173,62,125,55"/>
+<area shape="rect" id="Node000004" href="$class_result.html#a90f44667e23d25ccdeac37f00a74657b" title=" " alt="" coords="371,56,474,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="307,67,356,67,356,72,307,72"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="TrucoGameMode::OnJoined" name="TrucoGameMode::OnJoined">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,188,32"/>
+<area shape="rect" id="Node000002" href="$class_game_mode.html#a8e6ef180d9daf915bdc4057a2b86a614" title=" " alt="" coords="236,5,386,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,16,220,16,220,21,188,21"/>
+</map>

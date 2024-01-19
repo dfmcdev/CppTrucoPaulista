@@ -4,6 +4,9 @@
 
 class Card;
 
+/*! \class Hand
+	\brief Classe que representa as cartas de baralho que estao em posse (na mao) de um jogador.
+*/
 class Hand
 {
 private:

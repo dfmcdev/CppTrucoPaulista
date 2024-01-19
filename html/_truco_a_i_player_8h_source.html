@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Truco Paulista: Código-Fonte de C:/Projects/CppTrucoPaulista/TrucoPaulista/TrucoGame/Public/TrucoAIPlayer.h</title>
+<link rel="icon" href="truco_logo.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="truco_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Truco Paulista<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implementação em C++ do jogo de cartas Truco Paulista</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_e27f7acb6c354cea3d58335de45d9d79.html">Projects</a></li><li class="navelem"><a class="el" href="dir_3aef8ba6162a779b90462cba93b3110c.html">CppTrucoPaulista</a></li><li class="navelem"><a class="el" href="dir_a0307bd90a6fb638cc39cefd1a759e4e.html">TrucoPaulista</a></li><li class="navelem"><a class="el" href="dir_256f98d9800d92f460266b441d40f9aa.html">TrucoGame</a></li><li class="navelem"><a class="el" href="dir_e71e807435ac92bb35761de3facc910a.html">Public</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">TrucoAIPlayer.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_truco_a_i_player_8h.html">Ir para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_a_i_player_8h.html">AIPlayer.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_truco_player_8h.html">TrucoPlayer.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">class </span><a class="code hl_class" href="class_truco_a_i_player_state.html">TrucoAIPlayerState</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="class_a_i_player_controller.html">AIPlayerController</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="};">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_truco_a_i_player.html">   14</a></span><span class="keyword">class </span><a class="code hl_class" href="class_truco_a_i_player.html">TrucoAIPlayer</a> : <span class="keyword">public</span> <a class="code hl_class" href="class_a_i_player.html">AIPlayer</a>, <span class="keyword">public</span> <a class="code hl_class" href="class_truco_player.html">TrucoPlayer</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="class_truco_a_i_player.html#a7e51321a3c6f070797658db13ccff8b1">TrucoAIPlayer</a>(</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <a class="code hl_class" href="class_truco_player_state.html">TrucoPlayerState</a>* pPlayerState, </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <a class="code hl_class" href="class_truco_a_i_player_state.html">TrucoAIPlayerState</a>* pAIPlayerState, </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_class" href="class_a_i_player_controller.html">AIPlayerController</a>* pAIPlayerController, </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">double</span> minTinkTimeSec, </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordtype">double</span> maxThinkTimeSec);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>};</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="ttc" id="a_a_i_player_8h_html"><div class="ttname"><a href="_a_i_player_8h.html">AIPlayer.h</a></div></div>
+<div class="ttc" id="a_truco_player_8h_html"><div class="ttname"><a href="_truco_player_8h.html">TrucoPlayer.h</a></div></div>
+<div class="ttc" id="aclass_a_i_player_controller_html"><div class="ttname"><a href="class_a_i_player_controller.html">AIPlayerController</a></div><div class="ttdoc">Classe base que representa um avatar controlado por AI.</div><div class="ttdef"><b>Definição</b> <a href="_a_i_player_controller_8h_source.html#l00011">AIPlayerController.h:13</a></div></div>
+<div class="ttc" id="aclass_a_i_player_html"><div class="ttname"><a href="class_a_i_player.html">AIPlayer</a></div><div class="ttdoc">Classe base que representa o avatar controlado por AI.</div><div class="ttdef"><b>Definição</b> <a href="_a_i_player_8h_source.html#l00010">AIPlayer.h:11</a></div></div>
+<div class="ttc" id="aclass_truco_a_i_player_html"><div class="ttname"><a href="class_truco_a_i_player.html">TrucoAIPlayer</a></div><div class="ttdoc">Especializacao da classe AIPlayer para um jogo de truco.</div><div class="ttdef"><b>Definição</b> <a href="#l00014">TrucoAIPlayer.h:15</a></div></div>
+<div class="ttc" id="aclass_truco_a_i_player_html_a7e51321a3c6f070797658db13ccff8b1"><div class="ttname"><a href="class_truco_a_i_player.html#a7e51321a3c6f070797658db13ccff8b1">TrucoAIPlayer::TrucoAIPlayer</a></div><div class="ttdeci">TrucoAIPlayer(TrucoPlayerState *pPlayerState, TrucoAIPlayerState *pAIPlayerState, AIPlayerController *pAIPlayerController, double minTinkTimeSec, double maxThinkTimeSec)</div><div class="ttdef"><b>Definição</b> <a href="_truco_a_i_player_8cpp_source.html#l00005">TrucoAIPlayer.cpp:5</a></div></div>
+<div class="ttc" id="aclass_truco_a_i_player_state_html"><div class="ttname"><a href="class_truco_a_i_player_state.html">TrucoAIPlayerState</a></div><div class="ttdoc">Especializacao da classe AIPlayerState para um jogo de truco.</div><div class="ttdef"><b>Definição</b> <a href="_truco_a_i_player_state_8h_source.html#l00010">TrucoAIPlayerState.h:11</a></div></div>
+<div class="ttc" id="aclass_truco_player_html"><div class="ttname"><a href="class_truco_player.html">TrucoPlayer</a></div><div class="ttdoc">Especializacao da classe Player para um jogo de truco.</div><div class="ttdef"><b>Definição</b> <a href="_truco_player_8h_source.html#l00012">TrucoPlayer.h:13</a></div></div>
+<div class="ttc" id="aclass_truco_player_state_html"><div class="ttname"><a href="class_truco_player_state.html">TrucoPlayerState</a></div><div class="ttdoc">Especializacao da classe PlayerState para uma partida de truco.</div><div class="ttdef"><b>Definição</b> <a href="_truco_player_state_8h_source.html#l00012">TrucoPlayerState.h:13</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>

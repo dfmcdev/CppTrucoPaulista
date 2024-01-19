@@ -7,6 +7,9 @@ class Result;
 class GameState;
 class PlayerController;
 
+/*! \class GameMode
+	\brief Classe base responsavel por gerenciar as regras do jogo
+*/
 class GameMode
 {
 private:

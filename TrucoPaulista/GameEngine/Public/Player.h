@@ -3,6 +3,11 @@
 #include "PlayerState.h"
 #include "PlayerController.h"
 
+/*! \class Player
+	\brief Classe base que representa o avatar de um jogador. 
+
+	Aqui teremos as informacoes sobre o jogador que nao mudam entre uma partida e outra.
+*/
 class Player
 {
 protected:

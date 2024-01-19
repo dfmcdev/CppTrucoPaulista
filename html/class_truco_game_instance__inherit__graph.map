@@ -1,0 +1,5 @@
+<map id="TrucoGameInstance" name="TrucoGameInstance">
+<area shape="rect" id="Node000001" title="Expecializacao da classe GameInstance para um jogo de truco." alt="" coords="5,293,135,363"/>
+<area shape="rect" id="Node000002" href="$class_game_instance.html" title="Classe base que gerencia de forma geral uma instancia do jogo em execucao." alt="" coords="8,5,132,245"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,260,73,294,67,294,67,260"/>
+</map>

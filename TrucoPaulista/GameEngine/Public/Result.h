@@ -1,6 +1,9 @@
 #pragma once
 #include <string>
 
+/*! \enum ResultCode
+	\brief Enumeracao que representa os possiveis retornos de uma operacao que retorna um Result.
+*/
 enum ResultCode
 {
 	Undefined,
@@ -10,6 +13,9 @@ enum ResultCode
 	PlayerAlreadyJoined
 };
 
+/*! \class Result
+*	\brief Classe que representa o resultado de uma operacao que pode falhar de forma aceitavel.
+*/
 class Result
 {
 private:

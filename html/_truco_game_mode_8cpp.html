@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Truco Paulista: Referência do Arquivo C:/Projects/CppTrucoPaulista/TrucoPaulista/TrucoGame/Private/TrucoGameMode.cpp</title>
+<link rel="icon" href="truco_logo.png" type="image/x-icon" />
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="truco_logo.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Truco Paulista<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Implementação em C++ do jogo de cartas Truco Paulista</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.10.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_e6bb53534ac0e427887cf7a94c0c004e.html">C:</a></li><li class="navelem"><a class="el" href="dir_e27f7acb6c354cea3d58335de45d9d79.html">Projects</a></li><li class="navelem"><a class="el" href="dir_3aef8ba6162a779b90462cba93b3110c.html">CppTrucoPaulista</a></li><li class="navelem"><a class="el" href="dir_a0307bd90a6fb638cc39cefd1a759e4e.html">TrucoPaulista</a></li><li class="navelem"><a class="el" href="dir_256f98d9800d92f460266b441d40f9aa.html">TrucoGame</a></li><li class="navelem"><a class="el" href="dir_ba4c82791ebb4acb5d7fc94d35753201.html">Private</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Referência do Arquivo TrucoGameMode.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_truco_game_mode_8h_source.html">TrucoGameMode.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_truco_game_state_8h_source.html">TrucoGameState.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_game_state_8h_source.html">GameState.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_truco_player_8h_source.html">TrucoPlayer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_truco_player_state_8h_source.html">TrucoPlayerState.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_player_8h_source.html">Player.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_deck_8h_source.html">Deck.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_card_8h_source.html">Card.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_hand_8h_source.html">Hand.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_truco_a_i_player_8h_source.html">TrucoAIPlayer.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_truco_a_i_player_state_8h_source.html">TrucoAIPlayerState.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_a_i_player_controller_8h_source.html">AIPlayerController.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependência de inclusões para TrucoGameMode.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="_truco_game_mode_8cpp__incl.png" border="0" usemap="#a_c_1_2_projects_2_cpp_truco_paulista_2_truco_paulista_2_truco_game_2_private_2_truco_game_mode_8cpp" alt=""/></div>
+<map name="a_c_1_2_projects_2_cpp_truco_paulista_2_truco_paulista_2_truco_game_2_private_2_truco_game_mode_8cpp" id="a_c_1_2_projects_2_cpp_truco_paulista_2_truco_paulista_2_truco_game_2_private_2_truco_game_mode_8cpp">
+<area shape="rect" title=" " alt="" coords="493,5,685,64"/>
+<area shape="rect" href="_truco_game_mode_8h.html" title=" " alt="" coords="105,112,236,139"/>
+<area shape="poly" title=" " alt="" coords="493,59,245,111,244,106,492,54"/>
+<area shape="rect" href="_truco_game_state_8h.html" title=" " alt="" coords="260,112,390,139"/>
+<area shape="poly" title=" " alt="" coords="504,67,378,109,376,104,502,62"/>
+<area shape="rect" href="_game_state_8h.html" title=" " alt="" coords="280,187,378,213"/>
+<area shape="poly" title=" " alt="" coords="536,67,454,114,359,179,356,175,451,110,534,62"/>
+<area shape="rect" href="_truco_player_8h.html" title=" " alt="" coords="794,187,896,213"/>
+<area shape="poly" title=" " alt="" coords="686,48,792,73,835,90,863,110,870,126,871,142,862,173,857,172,865,142,865,127,859,114,833,95,790,78,685,53"/>
+<area shape="rect" href="_player_8h.html" title=" " alt="" coords="681,261,750,288"/>
+<area shape="poly" title=" " alt="" coords="604,63,636,132,678,212,700,247,695,250,673,215,631,134,599,65"/>
+<area shape="rect" href="_truco_player_state_8h.html" title=" " alt="" coords="5,261,138,288"/>
+<area shape="poly" title=" " alt="" coords="492,40,383,46,265,58,210,68,161,80,121,95,95,114,76,144,67,179,66,215,69,246,64,246,61,215,62,178,71,142,91,110,119,91,159,75,209,63,264,53,383,40,492,35"/>
+<area shape="rect" href="_deck_8h.html" title=" " alt="" coords="464,112,527,139"/>
+<area shape="poly" title=" " alt="" coords="561,66,522,103,518,99,557,62"/>
+<area shape="rect" href="_card_8h.html" title=" " alt="" coords="651,112,711,139"/>
+<area shape="poly" title=" " alt="" coords="620,62,659,99,655,103,617,66"/>
+<area shape="rect" href="_hand_8h.html" title=" " alt="" coords="530,187,592,213"/>
+<area shape="poly" title=" " alt="" coords="587,65,568,172,563,171,581,64"/>
+<area shape="rect" href="_truco_a_i_player_8h.html" title=" " alt="" coords="735,112,848,139"/>
+<area shape="poly" title=" " alt="" coords="656,62,750,103,748,108,654,67"/>
+<area shape="rect" href="_truco_a_i_player_state_8h.html" title=" " alt="" coords="923,112,1068,139"/>
+<area shape="poly" title=" " alt="" coords="686,54,923,106,922,111,685,59"/>
+<area shape="rect" href="_a_i_player_controller_8h.html" title=" " alt="" coords="949,261,1085,288"/>
+<area shape="poly" title=" " alt="" coords="686,34,794,39,912,51,967,61,1016,74,1055,90,1081,110,1092,127,1095,146,1093,165,1086,185,1066,221,1042,252,1037,248,1061,218,1081,183,1088,164,1090,146,1087,129,1078,114,1052,95,1014,79,966,66,912,56,794,44,685,39"/>
+<area shape="rect" href="_game_mode_8h.html" title=" " alt="" coords="157,187,256,213"/>
+<area shape="poly" title=" " alt="" coords="179,138,196,171,191,174,174,140"/>
+<area shape="rect" title=" " alt="" coords="164,261,240,288"/>
+<area shape="poly" title=" " alt="" coords="164,140,148,174,144,193,147,212,159,232,175,249,171,253,155,235,142,214,139,193,143,172,159,138"/>
+<area shape="rect" title=" " alt="" coords="388,261,443,288"/>
+<area shape="poly" title=" " alt="" coords="243,211,374,256,372,261,242,216"/>
+<area shape="poly" title=" " alt="" coords="208,214,206,246,201,246,203,214"/>
+<area shape="poly" title=" " alt="" coords="328,139,330,171,325,171,323,139"/>
+<area shape="poly" title=" " alt="" coords="824,216,753,256,750,251,821,212"/>
+<area shape="rect" href="_player_state_8h.html" title=" " alt="" coords="471,336,571,363"/>
+<area shape="poly" title=" " alt="" coords="683,291,570,333,568,328,681,286"/>
+<area shape="rect" href="_player_controller_8h.html" title=" " alt="" coords="804,336,928,363"/>
+<area shape="poly" title=" " alt="" coords="743,286,827,326,825,331,741,291"/>
+<area shape="poly" title=" " alt="" coords="139,284,456,335,455,340,138,289"/>
+<area shape="poly" title=" " alt="" coords="483,141,462,162,443,188,431,217,423,247,418,245,426,216,439,185,458,158,479,137"/>
+<area shape="rect" title=" " alt="" coords="453,187,506,213"/>
+<area shape="poly" title=" " alt="" coords="495,140,488,172,483,171,490,139"/>
+<area shape="poly" title=" " alt="" coords="537,216,456,256,453,252,534,211"/>
+<area shape="poly" title=" " alt="" coords="803,138,829,173,824,176,799,141"/>
+<area shape="rect" href="_a_i_player_8h.html" title=" " alt="" coords="688,187,770,213"/>
+<area shape="poly" title=" " alt="" coords="783,141,752,177,748,173,779,137"/>
+<area shape="rect" href="_a_i_player_state_8h.html" title=" " alt="" coords="939,187,1052,213"/>
+<area shape="poly" title=" " alt="" coords="998,139,998,171,993,171,993,139"/>
+<area shape="poly" title=" " alt="" coords="992,291,907,331,905,326,989,286"/>
+</map>
+</div>
+</div>
+<p><a href="_truco_game_mode_8cpp_source.html">Ir para o código-fonte desse arquivo.</a></p>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0
+</small></address>
+</body>
+</html>
