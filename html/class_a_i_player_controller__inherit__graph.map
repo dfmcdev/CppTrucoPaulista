@@ -1,5 +1,0 @@
-<map id="AIPlayerController" name="AIPlayerController">
-<area shape="rect" id="Node000001" title="Classe base que representa um avatar controlado por AI." alt="" coords="11,251,147,320"/>
-<area shape="rect" id="Node000002" href="$class_player_controller.html" title="Classe base que representa um jogador." alt="" coords="5,5,153,203"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,218,82,251,77,251,77,218"/>
-</map>

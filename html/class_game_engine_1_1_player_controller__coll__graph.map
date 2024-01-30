@@ -1,8 +1,0 @@
-<map id="GameEngine::PlayerController" name="GameEngine::PlayerController">
-<area shape="rect" id="Node000001" title="Classe base que representa um jogador." alt="" coords="5,5,193,181"/>
-<area shape="rect" id="Node000002" href="$class_game_engine_1_1_player.html" title="Classe base que representa o avatar de um jogador." alt="" coords="126,245,270,379"/>
-<area shape="poly" id="edge2_Node000002_Node000001" title=" " alt="" coords="40,181,39,201,45,220,58,238,74,254,112,278,109,283,71,258,54,242,40,223,33,202,35,181"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="181,246,166,206,162,197,167,195,171,204,186,245"/>
-<area shape="rect" id="Node000003" href="$class_game_engine_1_1_player_state.html" title="Classe base responsavel por gerenciar o estado do Player durante as partidas." alt="" coords="271,48,435,139"/>
-<area shape="poly" id="edge3_Node000002_Node000003" title=" " alt="" coords="344,139,329,181,306,223,284,248,280,245,301,220,324,179,339,137"/>
-</map>

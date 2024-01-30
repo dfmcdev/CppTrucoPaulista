@@ -1,9 +1,0 @@
-<map id="GameMode::OnGameStarted" name="GameMode::OnGameStarted">
-<area shape="rect" id="Node000001" title=" " alt="" coords="515,31,705,57"/>
-<area shape="rect" id="Node000002" href="$class_truco_game_mode.html#ae6c58f4c265a5d8e2cfc31dbd52724df" title=" " alt="" coords="245,5,467,32"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="499,36,467,32,468,27,500,30"/>
-<area shape="rect" id="Node000003" href="$class_game_mode.html#a18b73713889660ca2203da10145fc8df" title=" " alt="" coords="276,56,436,83"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="500,58,436,64,436,59,499,52"/>
-<area shape="rect" id="Node000004" href="$class_truco_game_mode.html#a1b19559861f52a0d3a0db7030471a836" title=" " alt="" coords="5,56,197,83"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="261,72,197,72,197,67,261,67"/>
-</map>

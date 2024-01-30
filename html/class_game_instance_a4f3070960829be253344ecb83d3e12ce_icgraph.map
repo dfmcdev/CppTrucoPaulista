@@ -1,7 +1,0 @@
-<map id="GameInstance::Cleanup" name="GameInstance::Cleanup">
-<area shape="rect" id="Node000001" title=" " alt="" coords="259,43,419,69"/>
-<area shape="rect" id="Node000002" href="$class_truco_game_instance.html#a6d540fc0eb2a24c838f191de83e0ebd8" title=" " alt="" coords="35,5,181,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="243,47,181,39,181,33,244,41"/>
-<area shape="rect" id="Node000003" href="$class_game_instance.html#a786574b10c67afaf2301949dda05f344" title=" " alt="" coords="5,72,211,99"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="243,71,212,75,211,70,243,65"/>
-</map>

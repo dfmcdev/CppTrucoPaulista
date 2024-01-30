@@ -1,5 +1,0 @@
-<map id="GameEngine::AIPlayer" name="GameEngine::AIPlayer">
-<area shape="rect" id="Node000001" title="Classe base que representa o avatar controlado por AI." alt="" coords="5,5,181,181"/>
-<area shape="rect" id="Node000002" href="$class_truco_game_1_1_truco_a_i_player.html" title="Especializacao da classe AIPlayer para um jogo de truco." alt="" coords="9,229,178,299"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,196,96,229,91,229,91,196"/>
-</map>

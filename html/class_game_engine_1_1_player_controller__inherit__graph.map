@@ -1,5 +1,0 @@
-<map id="GameEngine::PlayerController" name="GameEngine::PlayerController">
-<area shape="rect" id="Node000001" title="Classe base que representa um jogador." alt="" coords="11,5,199,203"/>
-<area shape="rect" id="Node000002" href="$class_game_engine_1_1_a_i_player_controller.html" title="Classe base que representa um avatar controlado por AI." alt="" coords="5,251,205,320"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,218,108,251,103,251,103,218"/>
-</map>

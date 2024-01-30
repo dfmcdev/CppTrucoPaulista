@@ -1,7 +1,0 @@
-<map id="TrucoGame::TrucoGameMode::AdvancedTurn" name="TrucoGame::TrucoGameMode::AdvancedTurn">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,39,201,81"/>
-<area shape="rect" id="Node000002" href="$class_truco_game_1_1_truco_game_state.html#a83da9da4257767f91e8ae9ef5884e62c" title=" " alt="" coords="249,5,444,48"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,44,233,39,234,45,202,49"/>
-<area shape="rect" id="Node000003" href="$class_truco_game_1_1_truco_game_mode.html#a72f08ebaefec1a143b54c6b2e6405b26" title=" " alt="" coords="249,72,444,115"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,71,234,75,233,81,201,76"/>
-</map>

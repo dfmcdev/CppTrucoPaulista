@@ -1,8 +1,0 @@
-<map id="GameEngine::GameInstance" name="GameEngine::GameInstance">
-<area shape="rect" id="Node000001" title="Classe base que gerencia de forma geral uma instancia do jogo em execucao." alt="" coords="8,592,188,789"/>
-<area shape="poly" id="edge3_Node000001_Node000001" title=" " alt="" coords="189,666,207,674,215,690,212,701,206,708,202,705,207,698,209,691,203,678,187,671"/>
-<area shape="rect" id="Node000002" href="$class_game_engine_1_1_game_mode.html" title="Classe base responsavel por gerenciar as regras do jogo." alt="" coords="5,160,191,528"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,528,101,575,95,575,95,528"/>
-<area shape="rect" id="Node000003" href="$class_game_engine_1_1_game_state.html" title="Classe base responsavel por gerenciar o estado do jogo." alt="" coords="17,5,179,96"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,96,101,143,95,143,95,96"/>
-</map>

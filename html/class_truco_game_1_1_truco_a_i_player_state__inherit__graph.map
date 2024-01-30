@@ -1,5 +1,0 @@
-<map id="TrucoGame::TrucoAIPlayerState" name="TrucoGame::TrucoAIPlayerState">
-<area shape="rect" id="Node000001" title="Especializacao da classe AIPlayerState para um jogo de truco." alt="" coords="9,144,178,229"/>
-<area shape="rect" id="Node000002" href="$class_game_engine_1_1_a_i_player_state.html" title="Classe base responsavel por gerenciar o estado do Player controlado por AI." alt="" coords="5,5,181,96"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,111,96,144,91,144,91,111"/>
-</map>
