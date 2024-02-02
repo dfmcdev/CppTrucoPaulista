@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>714</width>
+    <width>713</width>
     <height>491</height>
    </rect>
   </property>
@@ -52,7 +52,7 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="StartPushButton">
      <property name="geometry">
       <rect>
        <x>110</x>
@@ -68,7 +68,7 @@
       <string>Start</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="NewGamePushButton">
      <property name="geometry">
       <rect>
        <x>20</x>
@@ -83,8 +83,17 @@
      <property name="text">
       <string>New Game</string>
      </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>true</bool>
+     </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber">
+    <widget class="QLCDNumber" name="ScorePlayer">
      <property name="geometry">
       <rect>
        <x>420</x>
@@ -97,7 +106,7 @@
       <string notr="true">background-color: rgb(0, 0, 0);</string>
      </property>
     </widget>
-    <widget class="QLCDNumber" name="lcdNumber_2">
+    <widget class="QLCDNumber" name="ScoreIA">
      <property name="geometry">
       <rect>
        <x>620</x>
@@ -183,7 +192,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <enum>Qt::Vertical</enum>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="ClickableLabel" name="PlayerCardOne">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -199,7 +208,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/xx.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="ClickableLabel" name="PlayerCardTwo">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -215,7 +224,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/xx.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="ClickableLabel" name="PlayerCardThree">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -231,7 +240,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/xx.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="ClickableLabel" name="IACardTwo">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -247,7 +256,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/xx.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="ClickableLabel" name="IACardOne">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -263,7 +272,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/xx.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="ClickableLabel" name="IACardThree">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -279,7 +288,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/xx.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="ViraCard">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -295,7 +304,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/xx.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="PlayerCardRoundTwo">
     <property name="geometry">
      <rect>
       <x>500</x>
@@ -311,23 +320,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/blank.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>410</x>
-      <y>330</y>
-      <width>81</width>
-      <height>111</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/blank.gif</pixmap>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="PlayerCardRoundThree">
     <property name="geometry">
      <rect>
       <x>600</x>
@@ -343,10 +336,10 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/blank.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_11">
+   <widget class="QLabel" name="IACardRoundTwo">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>500</x>
       <y>90</y>
       <width>81</width>
       <height>111</height>
@@ -359,7 +352,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/blank.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="IACardRoundOne">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -375,10 +368,10 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/blank.gif</pixmap>
     </property>
    </widget>
-   <widget class="QLabel" name="label_13">
+   <widget class="QLabel" name="IACardRoundThree">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>600</x>
       <y>90</y>
       <width>81</width>
       <height>111</height>
@@ -391,7 +384,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/blank.gif</pixmap>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_3">
+   <widget class="QPushButton" name="PokerPushButton">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -414,9 +407,32 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>POCKER!!</string>
     </property>
    </widget>
+   <widget class="QLabel" name="PlayerCardRoundOne">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>330</y>
+      <width>81</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="QtTrucoApplication.qrc">:/QtTrucoApplication/images/blank.gif</pixmap>
+    </property>
+   </widget>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ClickableLabel</class>
+   <extends>QLabel</extends>
+   <header>clickablelabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="QtTrucoApplication.qrc"/>
  </resources>
