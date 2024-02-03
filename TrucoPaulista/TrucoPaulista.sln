@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameEngine", "GameEngine\Ga
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrucoGame", "TrucoGame\TrucoGame.vcxproj", "{FC71273C-6445-4797-A361-CAE0F87C3B59}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QtTrucoApplication", "QtTrucoApplication\QtTrucoApplication.vcxproj", "{EA29BE1C-B04D-42DE-92D0-F925F012924E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{FC71273C-6445-4797-A361-CAE0F87C3B59}.Release|x64.Build.0 = Release|x64
 		{FC71273C-6445-4797-A361-CAE0F87C3B59}.Release|x86.ActiveCfg = Release|Win32
 		{FC71273C-6445-4797-A361-CAE0F87C3B59}.Release|x86.Build.0 = Release|Win32
+		{EA29BE1C-B04D-42DE-92D0-F925F012924E}.Debug|x64.ActiveCfg = Debug|x64
+		{EA29BE1C-B04D-42DE-92D0-F925F012924E}.Debug|x64.Build.0 = Debug|x64
+		{EA29BE1C-B04D-42DE-92D0-F925F012924E}.Debug|x86.ActiveCfg = Debug|x64
+		{EA29BE1C-B04D-42DE-92D0-F925F012924E}.Debug|x86.Build.0 = Debug|x64
+		{EA29BE1C-B04D-42DE-92D0-F925F012924E}.Release|x64.ActiveCfg = Release|x64
+		{EA29BE1C-B04D-42DE-92D0-F925F012924E}.Release|x64.Build.0 = Release|x64
+		{EA29BE1C-B04D-42DE-92D0-F925F012924E}.Release|x86.ActiveCfg = Release|x64
+		{EA29BE1C-B04D-42DE-92D0-F925F012924E}.Release|x86.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
