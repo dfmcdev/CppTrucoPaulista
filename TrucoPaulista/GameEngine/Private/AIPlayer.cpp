@@ -3,7 +3,7 @@
 
 using namespace GameEngine;
 
-AIPlayer::AIPlayer(AIPlayerState* aiPlayerState, double minThinkTimeSec, double maxThinkTimeSec)
+AIPlayer::AIPlayer(AIPlayerState* aiPlayerState, int minThinkTimeSec, int maxThinkTimeSec)
 {
 	m_AIPlayerState = aiPlayerState;
 
@@ -19,10 +19,10 @@ AIPlayer::~AIPlayer()
 	}
 }
 
-void AIPlayer::Think()
+void AIPlayer::Think(int thinkTime)
 {
 }
 
-void AIPlayer::DaAction()
+void AIPlayer::DoAction()
 {
 }
