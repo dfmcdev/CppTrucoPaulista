@@ -4,6 +4,8 @@
 #include "TrucoPlayer.h"
 #include "AIPlayerController.h"
 
+class Result;
+
 namespace TrucoGame
 {
 	class TrucoAIPlayerState;
@@ -26,6 +28,6 @@ namespace TrucoGame
 			int minTinkTimeSec,
 			int maxThinkTimeSec);
 		
-		void DoAction() override;
+		GameEngine::Result DoAction() override;
 	};
 };

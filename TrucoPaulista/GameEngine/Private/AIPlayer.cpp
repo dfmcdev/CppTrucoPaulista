@@ -1,5 +1,6 @@
 #include "AIPlayer.h"
 #include "AIPlayerState.h"
+#include "Result.h"
 
 using namespace GameEngine;
 
@@ -23,6 +24,7 @@ void AIPlayer::Think(int thinkTime)
 {
 }
 
-void AIPlayer::DoAction()
+Result AIPlayer::DoAction()
 {
+	return Result::Success();
 }

@@ -22,5 +22,6 @@ namespace TrucoGame
 		void AddCard(Card* card);
 		Card* PlayCard(int index);
 		std::vector<Card*> GetCards();
+		int GetNumCards();
 	};
 };
