@@ -10,29 +10,21 @@ Card::Card(Naipes naipe, int value) :
 
 bool Card::operator>(const Card& card) const
 {
-	if (m_Value == 0 && m_Naipe == Naipes::Paus) 
+	if (m_Value == card.m_Value)
 	{
-		return true;
-	}
-	else if (m_Value == 3 && m_Naipe == Naipes::Copas && !(card.m_Value == 0 && card.m_Naipe == Naipes::Paus))
-	{
-		return true;
-	}
-	else if (m_Value == 7 && m_Naipe == Naipes::Espadas && !((card.m_Value == 0 && card.m_Naipe == Naipes::Paus) || (card.m_Value == 3 && card.m_Naipe == Naipes::Copas)))
-	{
-		return true;
-	}
-	else if (m_Value == 3 && m_Naipe == Naipes::Ouros && !((card.m_Value == 0 && card.m_Naipe == Naipes::Paus) || (card.m_Value == 3 && card.m_Naipe == Naipes::Copas) || (card.m_Value == 7 && card.m_Naipe == Naipes::Espadas)))
-	{
-		return true;
-	}
-	else if (!((card.m_Value == 0 && card.m_Naipe == Naipes::Paus) || (card.m_Value == 3 && card.m_Naipe == Naipes::Copas) || (card.m_Value == 7 && card.m_Naipe == Naipes::Espadas) || (card.m_Value == 3 && card.m_Naipe == Naipes::Ouros)))
-	{
-		return m_Value > card.m_Value;
-	}
-	else 
-	{
+		if ((int)m_Naipe < (int)card.m_Naipe)
+			return true;
 		return false;
+	}
+	else
+	{
+		auto current_it = std::find(m_Schackle.begin(), m_Schackle.end(), m_Value);
+		auto card_it = std::find(m_Schackle.begin(), m_Schackle.end(), card.m_Value);
+
+		int value = current_it - m_Schackle.begin();
+		int card_value = card_it - m_Schackle.begin();
+
+		return (value < card_value);
 	}
 }
 
@@ -56,4 +48,21 @@ Naipes Card::GetNaipe()
 int Card::GetValue()
 {
 	return m_Value;
+}
+
+char Card::GetLudicValue()
+{
+	switch (m_Value)
+	{
+	case 1:
+		return 'A';
+	case 8:
+		return 'J';
+	case 9:
+		return 'Q';
+	case 10:
+		return 'K';
+	default:
+		return (char)m_Value;
+	}
 }

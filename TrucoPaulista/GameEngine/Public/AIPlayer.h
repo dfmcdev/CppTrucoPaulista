@@ -3,6 +3,7 @@
 namespace GameEngine
 {
 	class AIPlayerState;
+	class Result;
 
 	/*! \class AIPlayer
 		\brief Classe base que representa o avatar controlado por AI.
@@ -11,16 +12,18 @@ namespace GameEngine
 	*/
 	class AIPlayer
 	{
-	private:
-		double m_MinThinkTimeSeconds;
-		double m_MaxThinkTimeSeconds;
+	protected:
+		int m_MinThinkTimeSeconds;
+		int m_MaxThinkTimeSeconds;
+
 		AIPlayerState* m_AIPlayerState;
 
-	public:
-		AIPlayer(AIPlayerState* aiPlayerState, double minThinkTimeSec, double maxThinkTimeSec);
-		virtual ~AIPlayer();
+		virtual void Think(int thinkTime);
 
-		virtual void Think();
-		virtual void DaAction();
+	public:
+		AIPlayer(AIPlayerState* aiPlayerState, int minThinkTimeSec, int maxThinkTimeSec);
+		virtual ~AIPlayer();
+		
+		virtual Result DoAction();
 	};
 };

@@ -43,3 +43,8 @@ std::vector<Card*> Hand::GetCards()
 {
 	return m_Cards;
 }
+
+int TrucoGame::Hand::GetNumCards()
+{
+	return m_Cards.size();
+}

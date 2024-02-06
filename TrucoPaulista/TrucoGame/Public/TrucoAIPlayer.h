@@ -4,6 +4,8 @@
 #include "TrucoPlayer.h"
 #include "AIPlayerController.h"
 
+class Result;
+
 namespace TrucoGame
 {
 	class TrucoAIPlayerState;
@@ -15,12 +17,17 @@ namespace TrucoGame
 	*/
 	class TrucoAIPlayer : public GameEngine::AIPlayer, public TrucoPlayer
 	{
+	protected:
+		void Think(int thinkTime) override;
+
 	public:
 		TrucoAIPlayer(
 			TrucoPlayerState* pPlayerState,
 			TrucoAIPlayerState* pAIPlayerState,
 			GameEngine::AIPlayerController* pAIPlayerController,
-			double minTinkTimeSec,
-			double maxThinkTimeSec);
+			int minTinkTimeSec,
+			int maxThinkTimeSec);
+		
+		GameEngine::Result DoAction() override;
 	};
 };

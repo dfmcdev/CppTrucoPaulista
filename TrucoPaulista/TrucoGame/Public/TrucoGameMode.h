@@ -15,6 +15,7 @@ namespace TrucoGame
 	{
 	private:
 		int m_NumStartCards = 3;
+		const std::vector<int> m_DefaultStackle = { 3, 2, 1, 10, 8, 9, 7, 6, 5, 4 };
 
 		TrucoPlayer* GetStartPlayer();
 		std::function<void(TrucoPlayer*)> m_OnTurnAdvancedCallback;
@@ -33,5 +34,6 @@ namespace TrucoGame
 		void AdvancedTurn(TrucoPlayer* turnPlayer);
 
 		int GetNumStartCards() { return m_NumStartCards; }
+		int GetStackleCard() { return  m_DefaultStackle[0]; }
 	};
 };

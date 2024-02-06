@@ -27,6 +27,7 @@ namespace TrucoGame
 		int GetNumCards();
 		void Shuffle();
 		Card* DrawCard();
+		//Card* GetTurningCard();
 		std::vector<Card*> DrawCards(int numCards);
 	};
 };
