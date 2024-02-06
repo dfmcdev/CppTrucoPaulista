@@ -129,3 +129,8 @@ void TrucoGameMode::AdvancedTurn(TrucoPlayer* turnPlayer)
 
 	OnTurnAdvanced(turnPlayer);
 }
+
+//Card TrucoGameMode::DefineShackleCard(int randomIndex)
+//{
+//
+//}

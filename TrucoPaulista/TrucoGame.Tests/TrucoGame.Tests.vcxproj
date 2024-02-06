@@ -157,6 +157,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Card.Tests.cpp" />
     <ClCompile Include="Deck.Tests.cpp" />
     <ClCompile Include="GameMode.Tests.cpp" />
     <ClCompile Include="pch.cpp">
