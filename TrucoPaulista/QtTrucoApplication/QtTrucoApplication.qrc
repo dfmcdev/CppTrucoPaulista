@@ -56,5 +56,6 @@
 		<file>images/blank.png</file>
 		<file>images/xx.png</file>
 		<file>images/xx.gif</file>
+		<file>images/cardback.gif</file>
     </qresource>
 </RCC>

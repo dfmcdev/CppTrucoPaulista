@@ -15,10 +15,18 @@ private:
     Ui::QtTrucoApplicationClass ui;
     int PlayerRound;
     int IARound;
-    void SetPlayerCardInRound();
-    void SetIACardInRound();
+    bool IACardInvalid[3] = { false, false, false };
+    bool PlayerCardInvalid[3] = { false, false, false };
+    void SetPlayerCardInRound(int card);
+    void SetIACardInRound(int card);
     void SetScorePlayer(double Score);
     void SetScoreIA(double Score);
+    void InitializeCards();
+    QPixmap GetImageCardPlayer(int card);
+    void SetEmptyImageCardPlayer(int card);
+    QPixmap GetImageCardIA(int card);
+    void SetEmptyImageCardIA(int card);
+
 
 signals:
 public slots:
