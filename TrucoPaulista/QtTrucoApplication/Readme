@@ -1,0 +1,4 @@
+1 - To execute the Qt application you need install the Extension Qt Visual Studio Tools.
+2 - After this, you need to download the Qt to Windows in https://download.qt.io/archive/online_installers/4.6/.
+3 - Now the visual studio will request to configure the qt version.
+4 - The application can be compiled and the executable will be generated.
